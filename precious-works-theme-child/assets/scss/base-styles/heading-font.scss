@@ -1,0 +1,16 @@
+
+// Mixins
+@mixin heading-style($size, $weight: 400, $line-height: 1.2) {
+  font-family: $heading-font;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height; 
+}
+
+// Headings
+h1 { @include heading-style(3.4375rem); }
+h2 { @include heading-style(2.5rem); }
+h3 { @include heading-style(2rem); }
+h4 { @include heading-style(1.125rem); }
+h5 { @include heading-style(1rem); }
+h6 { @include heading-style(0.875rem); }

@@ -14,6 +14,20 @@ function pw_enqueue_scripts() {
     // Then enqueue child style, dependent on parent-style
     // wp_enqueue_style( 'pw-style', get_stylesheet_directory_uri() . '/assets/dist/css/style.min.css', ['parent-style'], PW_THEME_CHILD_VERSION );
     
+    wp_enqueue_style(
+        'questrial-font',
+        'https://fonts.googleapis.com/css2?family=Questrial&display=swap',
+        array(),
+        null
+    );
+
+    wp_enqueue_style(
+        'league-spartan-font',
+        'https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap',
+        array(),
+        null
+    );
+    
     // JS if needed
     wp_enqueue_script( 'pw-main', get_template_directory_uri()  . '/assets/js/main.js', [], PW_THEME_CHILD_VERSION, true );
 
