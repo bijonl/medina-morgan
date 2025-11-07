@@ -255,6 +255,27 @@
             "selected": 0
         },
         {
+            "key": "field_690e2abc89f1a",
+            "label": "Attorney Disclaimer Text",
+            "name": "attorney_disclaimer_text",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": "",
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
             "key": "field_688922228f337",
             "label": "Copyright Text",
             "name": "copyright_text",
@@ -294,5 +315,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1753819207
+    "modified": 1762536290
 }

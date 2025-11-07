@@ -6,6 +6,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 // 🔧 Define theme version
 $theme = wp_get_theme();
 define( 'PW_THEME_CHILD_VERSION', $theme->get( 'Version' ) );
+require_once get_stylesheet_directory() . '/includes/custom-post-types/staff.php';
+require_once get_stylesheet_directory() . '/includes/custom-post-types/services.php';
+require_once get_stylesheet_directory() . '/includes/custom-post-types/homepage-slides.php';
+
+
+
 
 
 function pw_enqueue_scripts() {
