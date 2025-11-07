@@ -54,6 +54,16 @@
         'icon'  => 'star-filled',
         'description' => "Display customer reviews or testimonials to build trust and show off great feedback."
     ],
+    'service-cards' => [
+        'label' => 'Service Slider Cards Block',
+        'icon'  => '',
+        'description' => "This allows you to provide quick glance of the staff."
+    ],
+    'staff' => [
+        'label' => 'Staff Block',
+        'icon'  => '',
+        'description' => "This allows you to provide quick glance of the staff."
+    ],
     'stats' => [
         'label' => 'Stats',
         'icon'  => 'number',

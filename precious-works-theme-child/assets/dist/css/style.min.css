@@ -7251,6 +7251,10 @@ small, .small {
   color: #666;
 }
 
+.p-small-size {
+  font-size: 14px;
+}
+
 .blog-archive-hero-section {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -7537,8 +7541,8 @@ small, .small {
 }
 
 .site-footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-color: black;
   color: white;
 }
