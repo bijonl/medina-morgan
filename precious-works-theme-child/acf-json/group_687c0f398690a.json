@@ -18,8 +18,8 @@
             },
             "choices": {
                 "none": "None",
-                "primary": "Primary",
-                "secondary": "Secondary"
+                "primary": "Primary (Black)",
+                "secondary": "Secondary (Royal)"
             },
             "default_value": false,
             "return_format": "value",
@@ -66,5 +66,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755702930
+    "modified": 1762542222
 }
