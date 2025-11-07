@@ -1,0 +1,54 @@
+
+
+.homepage-hero-section {
+    height: $homepage-hero-height;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: $homepage-hero-color; 
+    &.block-section {
+        padding-top: 0; 
+        padding-bottom: 0; 
+    }
+    .image-overlay {
+        background-color: $image-overlay-bg;
+        opacity: $image-overlay-opacity; 
+        z-index: 1; 
+        border-radius: 15px;
+    }
+    .homepage-hero-container {
+        z-index: 2;
+        position: relative;
+        .homepage-hero-row {
+            .homepage-hero-col {
+                .homepage-hero-content-wrapper {
+                    padding-top: 30px; 
+                    padding-left: 60px; 
+                    padding-bottom: 60px; 
+                    padding-right: 60px; 
+                    .title-area-container {
+                        z-index: 2;
+                        position: relative; 
+                    }
+                    .title-area-content-wrapper {
+                        padding-bottom: 30px; 
+                
+                         .title-wrapper {
+                            .h1 {
+                                font-size: $hero-title-size; 
+                            }
+                            
+                        }
+
+                    }
+                    .button-area-wrapper {
+                        text-align: center;
+                        z-index: 2;
+                        position: relative; 
+                    }
+                }
+            }
+        }
+    }
+}

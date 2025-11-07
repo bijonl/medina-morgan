@@ -1,13 +1,13 @@
 {
-    "key": "group_687d2b9fc6fe5",
-    "title": "Block : Homepage Hero Block (Slider)",
+    "key": "group_690e62884fe77",
+    "title": "Homepage Slide Fields",
     "fields": [
         {
-            "key": "field_687d2ba0e54f6",
-            "label": "Homepage Hero Content",
-            "name": "",
+            "key": "field_690e62886e80c",
+            "label": "Display Title",
+            "name": "display_title",
             "aria-label": "",
-            "type": "accordion",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,46 +16,19 @@
                 "class": "",
                 "id": ""
             },
-            "open": 0,
-            "multi_expand": 0,
-            "endpoint": 0
-        },
-        {
-            "key": "field_690e6320ececc",
-            "label": "Homepage Slides",
-            "name": "homepage_slides",
-            "aria-label": "",
-            "type": "relationship",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "post_type": [
-                "homepage_slides"
-            ],
-            "post_status": "",
-            "taxonomy": "",
-            "filters": [
-                "search"
-            ],
-            "return_format": "id",
-            "min": "",
-            "max": "",
+            "default_value": "",
+            "maxlength": "",
             "allow_in_bindings": 0,
-            "elements": "",
-            "bidirectional": 0,
-            "bidirectional_target": []
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
-            "key": "field_687d2bdd162f3",
-            "label": "Homepage Hero Content End",
-            "name": "",
+            "key": "field_690e629a6e80d",
+            "label": "Subtitle",
+            "name": "subtitle",
             "aria-label": "",
-            "type": "accordion",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -64,17 +37,37 @@
                 "class": "",
                 "id": ""
             },
-            "open": 0,
-            "multi_expand": 0,
-            "endpoint": 1
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_690e62a96e80e",
+            "label": "Button",
+            "name": "button",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "allow_in_bindings": 0
         }
     ],
     "location": [
         [
             {
-                "param": "block",
+                "param": "post_type",
                 "operator": "==",
-                "value": "acf\/homepage-hero"
+                "value": "homepage_slides"
             }
         ]
     ],
@@ -87,5 +80,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1762551081
+    "modified": 1762550452
 }

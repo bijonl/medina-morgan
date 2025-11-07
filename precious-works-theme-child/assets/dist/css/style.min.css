@@ -7060,8 +7060,8 @@ progress {
 
 .pw-solid-button {
   display: inline-block;
-  background-color: #000000;
-  border: solid 1px #000000;
+  background-color: #360584;
+  border: solid 1px #360584;
   color: #ffffff;
   line-height: 1;
   border-radius: 30px;
@@ -7070,22 +7070,30 @@ progress {
   transition: all 0.2s ease-in-out;
   padding-left: 16px;
   padding-right: 16px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   text-decoration: none;
 }
 .pw-solid-button:hover, .pw-solid-button:focus, .pw-solid-button:focus-visible {
   font-weight: 600;
   border-radius: 30px;
   background-color: #ffffff;
-  color: #000000;
-  border: solid 1px #000000;
+  color: #360584;
+  border: solid 1px #360584;
   text-decoration: none;
 }
 .pw-solid-button:focus, .pw-solid-button:focus-visible {
   outline: none;
   box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.4);
   border-radius: 30px;
+}
+.pw-solid-button.pw-black-button {
+  background-color: #000000;
+}
+.pw-solid-button.pw-black-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: solid 1px #000000;
 }
 
 .container {
@@ -7655,10 +7663,21 @@ small, .small {
 }
 .homepage-hero-section .image-overlay {
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.75;
   z-index: 1;
+  border-radius: 15px;
 }
 .homepage-hero-section .homepage-hero-container {
+  z-index: 2;
+  position: relative;
+}
+.homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper {
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-bottom: 60px;
+  padding-right: 60px;
+}
+.homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-container {
   z-index: 2;
   position: relative;
 }
@@ -7670,6 +7689,8 @@ small, .small {
 }
 .homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .button-area-wrapper {
   text-align: center;
+  z-index: 2;
+  position: relative;
 }
 
 .photo-divider-section.block-section {

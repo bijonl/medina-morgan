@@ -35,17 +35,17 @@ $secondary-background-color: $color-secondary;
 $secondary-background-text-color:  $color-text-alt; 
 
 // Button Variables
-$solid-button-background: $color-primary; 
-$solid-button-border-color: $color-primary; 
+$solid-button-background: $color-secondary; 
+$solid-button-border-color: $color-secondary; 
 $solid-button-text-color: $color-text-alt; 
 $solid-button-padding-horizontal: 16px;
-$solid-button-padding-vertical: 12px;
+$solid-button-padding-vertical: 18px;
 $solid-button-border-radius: 30px; 
 $solid-button-min-width: 200px; 
 
 $solid-button-background-hover: $color-text-alt; 
-$solid-button-text-color-hover: $color-primary; 
-$solid-button-border-color-hover: $color-primary; 
+$solid-button-text-color-hover: $color-secondary; 
+$solid-button-border-color-hover: $color-secondary; 
 
 // Footer Variables
 $footer-padding: 80px; 

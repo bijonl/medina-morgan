@@ -29,4 +29,13 @@
         box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.4);
         border-radius: $solid-button-border-radius;
     }
+    &.pw-black-button {
+        background-color: $color-primary; 
+        &:hover {
+            background-color: $solid-button-background-hover; 
+            color: $color-primary; 
+            border: solid 1px $color-primary; 
+
+        }
+    }
 }

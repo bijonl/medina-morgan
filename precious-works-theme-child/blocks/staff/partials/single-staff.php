@@ -8,7 +8,7 @@
             <p><?php echo $position_display_name ?></p>
         </div>
         <div class="button-wrapper">
-            <a href="mailto:<?php echo $email_address ?>" class="pw-solid-button text-center">Email <?php echo $first_name ?></a>
+            <a href="mailto:<?php echo $email_address ?>" class="pw-solid-button pw-black-button text-center">Email <?php echo $first_name ?></a>
         </div>
     </div>  
 </article>
