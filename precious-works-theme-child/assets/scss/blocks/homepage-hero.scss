@@ -27,6 +27,12 @@
                     padding-left: 60px; 
                     padding-bottom: 60px; 
                     padding-right: 60px; 
+                    @include media-breakpoint-down(sm) {
+                        padding-top: 30px; 
+                        padding-left: 30px; 
+                        padding-bottom: 30px; 
+                        padding-right: 30px; 
+                    }
                     .title-area-container {
                         z-index: 2;
                         position: relative; 
@@ -37,6 +43,10 @@
                          .title-wrapper {
                             .h1 {
                                 font-size: $hero-title-size; 
+                                @include media-breakpoint-down(sm) {
+                                    font-size: 40px; 
+                                }
+
                             }
                             
                         }

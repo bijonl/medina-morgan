@@ -7691,6 +7691,14 @@ small, .small {
   padding-bottom: 60px;
   padding-right: 60px;
 }
+@media (max-width: 575.98px) {
+  .homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+  }
+}
 .homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-container {
   z-index: 2;
   position: relative;
@@ -7700,6 +7708,11 @@ small, .small {
 }
 .homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-content-wrapper .title-wrapper .h1 {
   font-size: 65px;
+}
+@media (max-width: 575.98px) {
+  .homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-content-wrapper .title-wrapper .h1 {
+    font-size: 40px;
+  }
 }
 .homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .button-area-wrapper {
   text-align: center;
