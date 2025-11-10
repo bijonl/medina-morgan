@@ -7019,9 +7019,13 @@ progress {
   background-color: #000000;
 }
 
-.background-secondary {
+.background-secondary, .service-slider-cards-block-section .section-title-wrapper {
   color: #ffffff;
   background-color: #360584;
+}
+
+.background-tertiary {
+  background-color: #EDEDED;
 }
 
 .heading-font {
@@ -7894,6 +7898,45 @@ small, .small {
 @media (max-width: 992px) {
   .two-column-image-and-text-section .full-bleed-container .full-bleed-row .text-col {
     width: auto;
+  }
+}
+
+.service-slider-cards-block-section {
+  padding-bottom: 0;
+}
+.service-slider-cards-block-section .section-title-wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.service-slider-cards-block-section .section-title-wrapper .title-area-container .title-area-row .title-area-col .title-area-content-wrapper {
+  padding-bottom: 0;
+}
+.service-slider-cards-block-section .service-col {
+  padding-top: 25px;
+  aspect-ratio: 8/10;
+}
+.service-slider-cards-block-section .service-col .service-member-card .service-image-wrapper {
+  padding-bottom: 15px;
+}
+.service-slider-cards-block-section .service-col .service-member-card .service-image-wrapper img {
+  width: 80%;
+}
+.service-slider-cards-block-section .service-col .service-member-card .service-meta-wrapper {
+  width: 50%;
+}
+@media (max-width: 1199.98px) {
+  .service-slider-cards-block-section .service-col .service-member-card .service-meta-wrapper {
+    width: 100%;
+  }
+}
+.service-slider-cards-block-section .service-col .service-member-card .service-meta-wrapper .service-text-wrapper .service-title {
+  color: #360584;
+  margin-bottom: 0;
+  padding-bottom: 35px;
+}
+@media (max-width: 991.98px) {
+  .service-slider-cards-block-section .service-col .service-member-card .service-meta-wrapper .service-text-wrapper .service-title {
+    font-size: 30px;
   }
 }
 

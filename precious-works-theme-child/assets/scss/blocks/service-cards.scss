@@ -1,0 +1,42 @@
+.service-slider-cards-block-section {
+    padding-bottom: 0; 
+    .section-title-wrapper {
+        @extend .background-secondary;
+        padding-top: 40px; 
+        padding-bottom: 40px; 
+        .title-area-container .title-area-row .title-area-col .title-area-content-wrapper {
+            padding-bottom: 0; 
+        }
+        .title-area-content-wrapper {
+            
+        } 
+    }
+    .service-col  {
+        padding-top: 25px; 
+        aspect-ratio: 8/10;
+        .service-member-card {
+            .service-image-wrapper {
+                padding-bottom: 15px; 
+                img {
+                    width: 80%; 
+                }
+            }
+            .service-meta-wrapper {
+                width: 50%;
+                @include media-breakpoint-down(xl) {
+                    width: 100%;
+                }
+                .service-text-wrapper {
+                    .service-title {
+                        color: $color-secondary; 
+                        margin-bottom: 0; 
+                        padding-bottom: 35px; 
+                        @include media-breakpoint-down(lg) {
+                            font-size: 30px; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

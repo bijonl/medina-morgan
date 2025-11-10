@@ -11,7 +11,7 @@ require_once get_stylesheet_directory() . '/includes/custom-post-types/services.
 require_once get_stylesheet_directory() . '/includes/custom-post-types/homepage-slides.php';
 
 
-
+add_image_size( 'service-card', 800, 360, true ); 
 
 
 function pw_enqueue_scripts() {
