@@ -7554,8 +7554,22 @@ small, .small {
   background-color: black;
   color: white;
 }
+@media (max-width: 575.98px) {
+  .site-footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 575.98px) {
+  .site-footer .site-footer-content-container .site-footer-content-row .footer-logo-col {
+    padding-bottom: 25px;
+  }
+}
 .site-footer .site-footer-content-container .site-footer-content-row .footer-logo-wrapper {
-  max-width: 320px;
+  max-width: 300px;
+}
+.site-footer .site-footer-content-container .site-footer-content-row .footer-logo-wrapper img {
+  border-radius: 0;
 }
 
 .title-area-container .title-area-row .title-area-col .title-area-content-wrapper {
@@ -7691,6 +7705,40 @@ small, .small {
   text-align: center;
   z-index: 2;
   position: relative;
+}
+
+@media (max-width: 991.98px) {
+  .call-to-action---contact-info-section .cta-container .cta-row .cta-title-wrapper {
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 575.98px) {
+  .call-to-action---contact-info-section .cta-container .cta-row .contact-cta-col .contact-item {
+    padding-bottom: 30px;
+  }
+  .call-to-action---contact-info-section .cta-container .cta-row .contact-cta-col .contact-item:last-child {
+    padding-bottom: 0;
+  }
+}
+.call-to-action---contact-info-section .cta-container .cta-row .contact-cta-col .contact-item .icon {
+  padding-bottom: 20px;
+}
+.call-to-action---contact-info-section .cta-container .cta-row .contact-cta-col .contact-item .title p {
+  margin-bottom: 0;
+}
+.call-to-action---contact-info-section .cta-container .cta-row .contact-cta-col .contact-item .content {
+  padding-top: 15px;
+}
+@media (max-width: 991.98px) {
+  .call-to-action---contact-info-section .cta-container .cta-row .contact-cta-col .contact-item .content {
+    padding-bottom: 5px;
+  }
+}
+.call-to-action---contact-info-section .cta-container .cta-row .contact-cta-col .contact-item .content p {
+  margin-bottom: 0;
+}
+.call-to-action---contact-info-section .cta-container .cta-row .contact-cta-col .contact-item .content a {
+  color: inherit;
 }
 
 .photo-divider-section.block-section {

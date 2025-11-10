@@ -10,7 +10,7 @@
         'description' => "A section designed to grab attention and encourage visitors to take a specific action—like clicking a button, signing up, or getting in touch. Use it to guide people toward what matters most on your site."
     ],
     'contact-cta' => [
-        'label' => 'Call To Action (Contact Info)',
+        'label' => 'Call To Action - Contact Info',
         'icon'  => 'phone',
         'description' => "A section designed to grab attention and encourage visitors to take a specific action—like clicking a button, signing up, or getting in touch. Use it to guide people toward what matters most on your site."
     ],

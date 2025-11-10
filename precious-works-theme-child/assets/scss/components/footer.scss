@@ -3,11 +3,23 @@
     padding-bottom: $footer-padding; 
     background-color: $footer-background-color; 
     color: $footer-color; 
+    @include media-breakpoint-down(sm) {
+        padding-top: 40px; 
+        padding-bottom: 40px; 
+    }
     .site-footer-content-container {
         .site-footer-content-row {
+            .footer-logo-col  {
+                @include media-breakpoint-down(sm) {
+                    padding-bottom: 25px; 
+                }
+            }
             // @import './partials/social-list'; 
             .footer-logo-wrapper {
-                max-width: 320px; 
+                max-width: 300px; 
+                img {
+                    border-radius: 0;
+                }
             }
         
         }
