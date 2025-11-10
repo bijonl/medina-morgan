@@ -7445,8 +7445,11 @@ small, .small {
 
 .site-header {
   background-color: #000000;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.site-header .mobile-logo {
+  width: 120px;
 }
 .site-header.is-scrolling {
   position: sticky;
@@ -7464,6 +7467,7 @@ small, .small {
 }
 .site-header .site-header-container .site-header-row .site-header-mobile-button-col nav,
 .site-header .site-header-container .site-header-row .header-menu-col nav {
+  font-size: 16px;
   height: 100%;
 }
 .site-header .site-header-container .site-header-row .site-header-mobile-button-col nav ul,
@@ -7518,6 +7522,15 @@ small, .small {
 .site-header .site-header-container .site-header-row .site-header-mobile-button-col .mobile-menu-wrapper #menu__toggle {
   opacity: 0;
 }
+.site-header .site-header-container .site-header-row .site-header-mobile-button-col .mobile-menu-wrapper #menu__toggle ~ .menu__btn img {
+  transform: rotate(45deg);
+  transition: all 0.2s ease-in-out;
+}
+.site-header .site-header-container .site-header-row .site-header-mobile-button-col .mobile-menu-wrapper #menu__toggle:checked ~ .menu__btn img {
+  transform: none;
+  filter: brightness(0%);
+  transition: all 0.2s ease-in-out;
+}
 .site-header .site-header-container .site-header-row .site-header-mobile-button-col .mobile-menu-wrapper #menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
 }
@@ -7537,8 +7550,8 @@ small, .small {
 .site-header .site-header-container .site-header-row .site-header-mobile-button-col .mobile-menu-wrapper .menu__btn {
   display: flex;
   align-items: center;
-  width: 26px;
-  height: 26px;
+  width: 55px;
+  height: 55px;
   cursor: pointer;
   z-index: 7;
 }
@@ -7547,7 +7560,7 @@ small, .small {
 .site-header .site-header-container .site-header-row .site-header-mobile-button-col .mobile-menu-wrapper .menu__btn > span::after {
   display: block;
   position: absolute;
-  width: 26px;
+  width: 55px;
   height: 2px;
   background-color: #616161;
   transition-duration: 0.25s;
@@ -7566,7 +7579,7 @@ small, .small {
   visibility: hidden;
   top: 0;
   right: -100%;
-  width: 300px;
+  width: 100%;
   height: 100%;
   margin: 0;
   padding: 80px 0;

@@ -1,4 +1,5 @@
 <?php $site_logo = get_field('site_logo', 'options'); 
+$mobile_site_logo = get_field('mobile_site_logo', 'options'); 
 $image_alt = get_post_meta($site_logo, '_wp_attachment_image_alt', TRUE);
 $site_name = get_site_option('blogname'); 
 
@@ -24,7 +25,7 @@ $site_name = get_site_option('blogname');
           <div class="hamburger-menu d-flex justify-content-end">
             <input id="menu__toggle" type="checkbox" />
             <label class="menu__btn" for="menu__toggle">
-              <span></span>
+                <img width="55" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/hamburger.png" alt="menu button"/>
             </label>
             <?php include(locate_template('components/header-navigation/partials/header-menu.php')); ?>
           </div>
