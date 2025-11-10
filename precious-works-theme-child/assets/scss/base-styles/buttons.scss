@@ -39,3 +39,46 @@
         }
     }
 }
+
+
+input.gform_button.button {
+    // @extend .u-focus-style;
+    display: inline-block;
+    background-color: $color-primary;
+    border: solid 1px $color-primary;  
+    color: $solid-button-text-color; 
+    line-height: 1; 
+    border-radius: $solid-button-border-radius;  
+    font-weight: 400;
+    min-width: 200px; 
+    transition: all 0.2s ease-in-out; 
+    padding-left: $solid-button-padding-horizontal; 
+    padding-right: $solid-button-padding-horizontal;
+    padding-top: $solid-button-padding-vertical; 
+    padding-bottom: $solid-button-padding-vertical; 
+    text-decoration: none; 
+    &:hover,  &:focus,
+    &:focus-visible {
+        font-weight: 600;
+        border-radius: $solid-button-border-radius;  
+        background-color: $solid-button-background-hover; 
+        color: $color-primary; 
+        border: solid 1px $color-primary; 
+        text-decoration: none;
+    }
+    &:focus,
+    &:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.4);
+        border-radius: $solid-button-border-radius;
+    }
+    &.pw-black-button {
+        background-color: $color-primary; 
+        &:hover {
+            background-color: $solid-button-background-hover; 
+            color: $color-primary; 
+            border: solid 1px $color-primary; 
+
+        }
+    }
+}

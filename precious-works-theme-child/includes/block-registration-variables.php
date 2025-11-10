@@ -19,6 +19,11 @@
         'icon'  => 'feedback',
         'description' => "Use this block to add a Gravity Form. It lets visitors send you messages, sign up, or share info easily."
     ],
+    'form-block-two-col' => [
+        'label' => 'Form Block - Two Column',
+        'icon'  => 'feedback',
+        'description' => "Use this block to add a Gravity Form with text content in another column."
+    ],
     'general-content' => [
         'label' => 'General Content',
         'icon'  => 'text',
