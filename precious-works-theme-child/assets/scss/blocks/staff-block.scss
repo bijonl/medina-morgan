@@ -1,0 +1,39 @@
+.staff-block-section {
+    .staff-container {
+        .staff-row {
+            .staff-col {
+                &:last-child {
+                    .staff-member-card {
+                        @include media-breakpoint-down(sm) {
+                            padding-bottom: 0; 
+                        }
+                    }
+
+                }
+                .staff-member-card {
+                    @include media-breakpoint-down(sm) {
+                        padding-bottom: 30px; 
+                    }
+                    .staff-image-wrapper {
+                        padding-bottom: 25px; 
+                    }
+                    .staff-meta-wrapper {
+                      
+                        .staff-text-wrapper {
+                            @include media-breakpoint-down(xl) {
+                                padding-bottom: 15px; 
+                            }
+                            .staff-name-title {
+                                margin-bottom: 0; 
+                                padding-bottom: 15px; 
+                            }
+                            p {
+                                margin-bottom: 0; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

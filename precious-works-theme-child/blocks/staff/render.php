@@ -13,7 +13,7 @@ if(!$has_content) {
     <div class="staff-container container">
         <div class="staff-row row justify-content-between">
              <?php foreach ($staff_members as $id) { ?>
-            <div class="staff-col col-sm-5">
+            <div class="staff-col col-md-6 col-lg-5">
                 <?php include(locate_template('components/variables/staff-variables.php')); ?>
                 <?php include(locate_template('blocks/staff/partials/single-staff.php')); ?>       
             </div>

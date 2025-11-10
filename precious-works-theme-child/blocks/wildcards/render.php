@@ -13,7 +13,7 @@ if(!$has_content) {
 <section <?php echo pw_block_section_classes($block) ?>>
     <?php include(locate_template('blocks/partials/title-area.php')); ?> 
     <div class="wildcards-container container">
-        <div class="wildcards-row row row-cols-1 gx-5 row-cols-lg-<?php echo $cards_per_row ?>" role="list">
+        <div class="wildcards-row row row-cols-1 gx-5 row-cols-md-2 row-cols-lg-<?php echo $cards_per_row ?>" role="list">
                 <?php if(have_rows('wildcards')) {
                     while(have_rows('wildcards')) {
                         the_row(); 

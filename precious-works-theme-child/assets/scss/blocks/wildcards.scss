@@ -1,0 +1,40 @@
+.wildcards-section {
+    padding-top: 90px; 
+    padding-bottom: 90px; 
+    .wildcards-container {
+        .wildcards-row {
+            .wildcards-col {
+                .single-wildcard-wrapper {
+                    @include media-breakpoint-down(lg) {
+                        padding-bottom: 40px; 
+                    }
+                    .wildcard-image-wrapper {
+                        margin: auto;
+                        padding-bottom: $wildcard-element-spacing; 
+                        i {
+                            font-size: 65px; 
+                        }
+                        &:has(img) {
+                            max-width: 70px;
+                        }
+                        img {
+                            width: 100%; 
+                            height: auto; 
+                        }
+                    }
+                    .wildcard-title-wrapper {
+                        padding-bottom: 30px; 
+                    }
+                    .wildcard-content-wrapper {
+                        padding-bottom: 30px; 
+                    }
+                    .button-area-wrapper {
+                        a.pw-solid-button {
+                            min-width: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
