@@ -68,6 +68,35 @@
             "preview_size": "medium"
         },
         {
+            "key": "field_691235ee77649",
+            "label": "Image Style",
+            "name": "image_style",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "contained": "Contained",
+                "full": "Full Bleed"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        },
+        {
             "key": "field_687ea5115efa7",
             "label": "Column Order",
             "name": "column_order",
@@ -128,5 +157,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1753131997
+    "modified": 1762801237
 }

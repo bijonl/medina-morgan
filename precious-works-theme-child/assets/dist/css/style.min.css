@@ -7857,4 +7857,31 @@ small, .small {
   margin-bottom: 0;
 }
 
+.two-column-image-and-text-section .full-bleed-container .full-bleed-row {
+  justify-content: end;
+}
+.two-column-image-and-text-section .full-bleed-container .full-bleed-row .image-col {
+  width: 50%;
+}
+@media (max-width: 992px) {
+  .two-column-image-and-text-section .full-bleed-container .full-bleed-row .image-col {
+    width: auto;
+    padding-bottom: 35px;
+  }
+}
+.two-column-image-and-text-section .full-bleed-container .full-bleed-row .text-col {
+  width: 45%;
+  margin-right: 5%;
+}
+@media (max-width: 1200px) {
+  .two-column-image-and-text-section .full-bleed-container .full-bleed-row .text-col {
+    width: 40%;
+  }
+}
+@media (max-width: 992px) {
+  .two-column-image-and-text-section .full-bleed-container .full-bleed-row .text-col {
+    width: auto;
+  }
+}
+
 /*# sourceMappingURL=style.min.css.map */

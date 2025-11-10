@@ -1,0 +1,26 @@
+.two-column-image-and-text-section {
+    .full-bleed-container {
+        .full-bleed-row {
+            justify-content: end;
+            .image-col {
+                width: 50%; 
+                @media (max-width: 992px) {
+                    width: auto; 
+                    padding-bottom: 35px; 
+                }
+            }
+            .text-col {
+                width: 45%; 
+                margin-right: 5%; 
+                @media (max-width: 1200px) {
+                    width: 40%; 
+                }
+                @media (max-width: 992px) {
+                    width: auto; 
+                }
+            }
+
+        }
+      
+    }
+}
