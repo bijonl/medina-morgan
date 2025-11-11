@@ -1,5 +1,6 @@
 .service-slider-cards-block-section {
     padding-bottom: 0; 
+    position: relative;
     .section-title-wrapper {
         @extend .background-secondary;
         padding-top: 40px; 
@@ -22,10 +23,12 @@
                 }
             }
             .service-meta-wrapper {
-                width: 50%;
-                @include media-breakpoint-down(xl) {
-                    width: 100%;
+                width: 65%;
+                @media (max-width:1200px) {
+                    width: 95%;
                 }
+
+              
                 .service-text-wrapper {
                     .service-title {
                         color: $color-secondary; 
@@ -39,4 +42,26 @@
             }
         }
     }
+
+
+    .glide__arrows {
+        position: absolute; 
+        display: flex;
+        bottom: 0;
+        right: 0;
+        .glide__arrow {
+            display: flex;
+            border: 0; 
+            position: relative;
+            box-shadow: none;
+            text-shadow: none;
+        }
+        .glide__arrow--left {
+            left: auto; 
+        }
+    }
+   
+
+
+
 }

@@ -18,7 +18,7 @@ $processed_copyright = str_replace(
     <?php if (!empty($attorney_disclaimer_text)) { ?>
         <div class="attorney-disclaimer-text">
             <p class="p-small-size">
-                <?php echo esc_html($attorney_disclaimer_text); ?>
+                <?php echo $attorney_disclaimer_text; ?>
             </p>
         </div>
     <?php }; ?>

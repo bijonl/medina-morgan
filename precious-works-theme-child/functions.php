@@ -35,7 +35,10 @@ function pw_enqueue_scripts() {
     );
     
     // JS if needed
-    wp_enqueue_script( 'pw-main', get_template_directory_uri()  . '/assets/js/main.js', [], PW_THEME_CHILD_VERSION, true );
+    wp_enqueue_script( 'glide-js', get_stylesheet_directory_uri()  . '/assets/js/glide.min.js', [], PW_THEME_CHILD_VERSION, true );
+    wp_enqueue_script( 'pw-main', get_stylesheet_directory_uri()  . '/assets/js/main.js', [], PW_THEME_CHILD_VERSION, true );
+
+
 
       // Font Awesome 6 CDN (replace with your preferred version if needed)
     wp_enqueue_style(
