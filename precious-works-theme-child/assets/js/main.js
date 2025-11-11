@@ -72,6 +72,6 @@ new Glide('.service-glide', {
       perView: 1
     }
   },
-  // autoplay: 3000,
+  autoplay: 3000,
   hoverpause: false,
 }).mount({}); 
