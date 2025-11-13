@@ -5,6 +5,12 @@
   background-color: $header-background;
   padding-top: 40px; 
   padding-bottom: 40px; 
+  position: relative; 
+  z-index: 1020;
+  img {
+    border-radius: 0;
+  }
+
 
   .mobile-logo {
     width: 120px; 

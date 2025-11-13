@@ -16,38 +16,49 @@ if(!$has_content) {
 
 ?>
 
- <?php foreach($homepage_slides as $id) { 
-        
-        $section_title = get_field('display_title', $id); 
-        $section_title_tag = 'h1'; 
-        $section_subtitle = get_field('subtitle', $id); 
-        $section_button = get_field('button', $id); 
-        $image_url = get_the_post_thumbnail_url($id); 
-        $has_title_area = $section_title || $section_subtitle; 
-        ?>
+<?php foreach ($homepage_slides as $id) { 
 
-        
-<section <?php echo pw_block_section_classes($block) ?> style="background-image: url(<?php echo $image_url ?>)">
+    $section_title = get_field('display_title', $id); 
+    $section_title_tag = 'h1'; 
+    $section_subtitle = get_field('subtitle', $id); 
+    $section_button = get_field('button', $id); 
+    $video_background = get_field('video_background', $id); // ACF video URL
+    $has_title_area = $section_title || $section_subtitle; 
+    ?>
+
+    <section <?php echo pw_block_section_classes($block); ?>>
+        <?php if ($video_background) { ?>
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="<?php echo esc_url($video_background); ?>" type="video/mp4">
+            </video>
+        <?php }; ?>
         <div class="homepage-hero-container container h-100">
             <div class="homepage-hero-row row align-items-center h-100">
                 <div class="homepage-hero-col col-12">
                     <div class="homepage-hero-content-wrapper position-relative text-center">
+
+                     
+
                         <div class="overlay image-overlay"></div>
-                        <?php $display_title = 'h1'; ?>
+
                         <?php 
+                        // Title area
+                        $display_title = 'h1';
                         include(locate_template('blocks/partials/title-area.php')); 
-                        ?>
-                        <?php 
+
+                        // Button area
                         include(locate_template('blocks/partials/button-area.php')); 
-                        
                         ?>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+<?php } ?>
 
 
+<style>
 
-  
-</section>
-    <?php } ?>
+
+</style>
