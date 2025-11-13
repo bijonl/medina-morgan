@@ -84,7 +84,7 @@ function pw_headings_paragraphs_in_bootstrap( $block_content, $block ) {
     }
 
     // Target core heading and paragraph blocks
-    if ( $block['blockName'] === 'core/heading' || $block['blockName'] === 'core/paragraph' ) {
+    if ( $block['blockName'] === 'core/heading' || $block['blockName'] === 'core/paragraph' || $block['blockName'] === 'core/list' ) {
         if ( trim( $block_content ) !== '' ) {
             $block_content = '<div class="container"><div class="row"><div class="col-12">'
                            . $block_content
