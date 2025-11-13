@@ -1,0 +1,69 @@
+
+.accordions-container {
+    .accordions-row {
+        .accordions-col {
+            .single-accordion {
+                border: $accordion-border;
+                margin-bottom: 20px;
+                color: inherit;
+                overflow: hidden; // keeps content neat
+
+                // Accordion button
+                .accordion {
+                    background-color: $color-secondary;
+                    width: 100%;
+                    display: flex;
+                    color: $color-text-alt; 
+                    justify-content: space-between;
+                    align-items: center;
+                    border: 0;
+                    outline: none;
+                    padding: $accordion-padding;
+                    font-size: 1rem;
+                    text-align: left;
+                    cursor: pointer;
+                    transition: background-color $accordion-transition;
+
+                    &:hover {
+                        background-color: transparent; 
+                        color: $color_primary; 
+                        svg {
+                            filter: brightness(0) 
+                        }
+                    }
+
+                    // icon rotation skeleton
+                    svg {
+                    transition: transform $accordion-transition;
+                    }
+
+                    &.is-open {
+                        background-color: transparent; 
+                        color: $color_primary; 
+                    svg {
+                        transform: rotate(45deg);
+                        filter: brightness(0) 
+                    }
+                        ~ .accordion-content {
+                            margin-bottom: 35px; 
+                            margin-top: 35px; 
+                        }
+                    }
+                }
+
+                // Accordion content
+                .accordion-content {
+                    max-height: 0;
+                    overflow: hidden;
+                    padding: 0 $accordion-padding; // horizontal only
+                    transition: max-height $accordion-transition, padding $accordion-transition;
+
+                    // when open (via inline JS height)
+                    &.is-open {
+                    padding: $accordion-padding; // add vertical padding once open
+                    }
+                }
+            }       
+        }
+    }
+}
