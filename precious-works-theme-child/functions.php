@@ -9,6 +9,8 @@ define( 'PW_THEME_CHILD_VERSION', $theme->get( 'Version' ) );
 require_once get_stylesheet_directory() . '/includes/custom-post-types/staff.php';
 require_once get_stylesheet_directory() . '/includes/custom-post-types/services.php';
 require_once get_stylesheet_directory() . '/includes/custom-post-types/homepage-slides.php';
+require_once get_stylesheet_directory() . '/includes/custom-post-types/jobs.php';
+
 
 
 add_image_size( 'service-card', 800, 360, true ); 
@@ -63,4 +65,36 @@ add_action( 'enqueue_block_editor_assets', 'pw_enqueue_scripts' );
 
 
 
+// Register career-accordions shortcode
+// Register career-accordions shortcode
+function career_accordions_shortcode($atts, $content = null) {
+    // Start output buffering
+    ob_start();
+
+    $all_jobs_args = array(
+        'post_type' => 'jobs', 
+        'posts_per_page' => -1, 
+    ); 
+
+    $all_jobs = new WP_Query($all_jobs_args); 
+
+    if ($all_jobs->have_posts()) {
+        $count = 0; 
+        // You can put your HTML here
+        while ($all_jobs->have_posts()) {
+            $all_jobs->the_post();
+            $count++; 
+            $id = get_the_id(); 
+            $title = get_the_title($id); 
+            $content = get_field('job_description', $id); 
+            $accordion_id = 'accordion-'.$count; 
+            include(locate_template('blocks/accordions/partials/single-accordion.php'));         
+        }
+        wp_reset_postdata();
+    }
+
+    // Return the buffered content
+    return ob_get_clean();
+}
+add_shortcode('career-accordions', 'career_accordions_shortcode');
 

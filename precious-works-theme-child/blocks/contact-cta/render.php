@@ -19,6 +19,8 @@ $has_content = !empty($phone_number_title)
                 || !empty($address_link) 
                 || !empty($section_title);  
                 
+$has_title_area = !empty($section_title) || !empty($section_subtitle); 
+
 
 if(!$has_content) {
     include __DIR__ . '/demo.php';
@@ -28,6 +30,7 @@ if(!$has_content) {
 <section <?php echo pw_block_section_classes($block) ?>>
     <div class="cta-container container">
         <div class="cta-row row align-items-center">
+            <?php if($has_title_area) { ?>
             <div class="cta-col col-lg-5 col-xl-4">
                 <?php if($section_title) { ?>
                     <div class="cta-title-wrapper">
@@ -39,9 +42,9 @@ if(!$has_content) {
                         <?php echo $section_subtitle ?>
                     </div>
                 <?php } ?>
-                <?php include(locate_template('blocks/partials/button-area.php')); ?>
             </div>
-            <div class="contact-cta-col col-lg-7 ms-auto">
+            <?php } ?>
+            <div class="contact-cta-col <?php echo $has_title_area ? 'col-lg-7' : 'col-lg-12' ?> ms-auto">
                 <div class="d-block d-sm-flex justify-content-between text-center">
                    <?php if (!empty($phone_number)) { ?>
                         <div class="contact-item phone-contact" role="group" aria-label="Phone contact information">

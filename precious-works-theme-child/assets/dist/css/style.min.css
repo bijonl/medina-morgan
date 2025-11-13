@@ -7641,6 +7641,59 @@ small, .small {
   margin-top: 30px;
 }
 
+.single-accordion {
+  border: 2px solid #360584;
+  margin-bottom: 20px;
+  color: inherit;
+  overflow: hidden;
+}
+.single-accordion .accordion {
+  background-color: #360584;
+  width: 100%;
+  display: flex;
+  color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  border: 0;
+  outline: none;
+  padding: 16px;
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+.single-accordion .accordion:hover {
+  background-color: transparent;
+  color: #000000;
+}
+.single-accordion .accordion:hover svg {
+  filter: brightness(0);
+}
+.single-accordion .accordion svg {
+  transition: transform 0.25s ease;
+}
+.single-accordion .accordion.is-open {
+  background-color: transparent;
+  color: #000000;
+}
+.single-accordion .accordion.is-open svg {
+  transform: rotate(45deg);
+  filter: brightness(0);
+}
+.single-accordion .accordion.is-open ~ .accordion-content {
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+.single-accordion .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  transition: max-height 0.25s ease, padding 0.25s ease;
+}
+.single-accordion .accordion-content.is-open {
+  padding: 16px;
+}
+
 .reviews-section .reviews-container .reviews-row .reviews-col .masonry-review-card {
   border: solid 2px black;
   padding: 15px;
