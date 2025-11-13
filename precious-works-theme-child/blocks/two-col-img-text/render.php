@@ -20,7 +20,7 @@ $text_col_width = !$is_full ? 'col-lg-6' : ''?>
 
 <section <?php echo pw_block_section_classes($block) ?>>
     <div class="two-col-container <?php echo !$is_full ? 'container': 'full-bleed-container container-md' ?>">
-        <div class="two-col-row <?php echo !$is_full ? 'row align-items-center': 'full-bleed-row d-lg-flex' ?> ">
+        <div class="two-col-row <?php echo !$is_full ? 'row align-items-center': 'full-bleed-row d-lg-flex align-items-center' ?> ">
             <div class="two-col-col image-col <?php echo $image_col_width ?> <?php echo $column_order ?>">
                 <?php echo wp_get_attachment_image($image, 'full', false, array('class' => 'w-100 h-auto')) ?>
             </div>

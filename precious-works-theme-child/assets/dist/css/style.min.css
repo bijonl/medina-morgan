@@ -7112,8 +7112,8 @@ input.gform_button.button {
   transition: all 0.2s ease-in-out;
   padding-left: 16px;
   padding-right: 16px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-decoration: none;
 }
 input.gform_button.button:hover, input.gform_button.button:focus, input.gform_button.button:focus-visible {
@@ -7204,6 +7204,10 @@ html :where(.wp-block) {
 
 img {
   border-radius: 15px;
+}
+
+.gform_wrapper.gravity-theme .gfield_required {
+  color: #360584 !important;
 }
 
 h1, .h1 {
@@ -7964,8 +7968,8 @@ small, .small {
   padding-top: 90px;
   padding-bottom: 90px;
 }
-@media (max-width: 991.98px) {
-  .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper {
+@media (max-width: 575.98px) {
+  .wildcards-section .wildcards-container .wildcards-row .wildcards-col {
     padding-bottom: 40px;
   }
 }
@@ -7985,6 +7989,11 @@ small, .small {
 }
 .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper .wildcard-title-wrapper {
   padding-bottom: 30px;
+}
+@media (max-width: 575.98px) {
+  .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper .wildcard-title-wrapper {
+    padding-bottom: 0;
+  }
 }
 .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper .wildcard-content-wrapper {
   padding-bottom: 30px;
@@ -8100,6 +8109,10 @@ small, .small {
 }
 .service-slider-cards-block-section .glide__arrows .glide__arrow--left {
   left: auto;
+}
+
+.form-block---two-column-section .form-block-text-column {
+  padding-bottom: 40px;
 }
 
 .glide {

@@ -16,7 +16,7 @@ if(!$has_content) {
 <section <?php echo pw_block_section_classes($block) ?>>
     <?php include(locate_template('blocks/partials/title-area.php')); ?>
     <div class="form-block-container container">
-        <div class="form-block-row row align-items-center">
+        <div class="form-block-row row">
             <?php if(have_rows('text_content')) { ?>
                 <div class="form-block-text-column col-sm-6 me-auto">
                     <?php while(have_rows('text_content')) {

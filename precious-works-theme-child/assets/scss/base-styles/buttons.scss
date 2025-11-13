@@ -54,8 +54,8 @@ input.gform_button.button {
     transition: all 0.2s ease-in-out; 
     padding-left: $solid-button-padding-horizontal; 
     padding-right: $solid-button-padding-horizontal;
-    padding-top: $solid-button-padding-vertical; 
-    padding-bottom: $solid-button-padding-vertical; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
     text-decoration: none; 
     &:hover,  &:focus,
     &:focus-visible {

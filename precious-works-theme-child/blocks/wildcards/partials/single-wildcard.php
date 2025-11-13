@@ -1,4 +1,4 @@
-<div class="single-wildcard-wrapper h-50">
+<div class="single-wildcard-wrapper h-sm-50">
     <?php if(!empty($image) || !empty($icon)) { ?>
            <div class="wildcard-image-wrapper">
                 <?php if ($image_type === 'icon') { ?>
