@@ -7,6 +7,34 @@
     background-size: cover;
     background-position: center;
     color: $homepage-hero-color; 
+    &:has(.half-sized) {
+        height: 50vh;
+        .overlay.image-overlay {
+            opacity: 0.3;
+        }
+        .homepage-hero-container {
+            z-index: 2;
+            position: relative;
+            .homepage-hero-row {
+                .homepage-hero-col {
+                    .homepage-hero-content-wrapper.interior-hero {
+                        padding: 0; 
+                        .image-overlay {
+                            display: none; 
+                        }
+                        .title-area-container {
+                           .title-area-content-wrapper {
+                                padding-bottom: 0 
+                           } 
+                            .title-wrapper {
+                                padding-bottom: 0; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     &.block-section {
         padding-top: 0; 
         padding-bottom: 0; 

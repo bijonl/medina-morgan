@@ -243,8 +243,8 @@
                 },
                 {
                     "key": "field_688929e811ea1",
-                    "label": "Button",
-                    "name": "button",
+                    "label": "Link",
+                    "name": "link",
                     "aria-label": "",
                     "type": "link",
                     "instructions": "",
@@ -281,5 +281,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1763225166
+    "modified": 1763229462
 }

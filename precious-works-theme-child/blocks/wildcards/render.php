@@ -24,6 +24,7 @@ if(!$has_content) {
                         $button = get_sub_field('button'); 
                         $image_type = get_sub_field('image_type'); 
                         $content = get_sub_field('content'); 
+                        $link = get_sub_field('link'); 
                         $wildcard_id = 'wildcard-'.get_row_index(); 
                         ?>
                         <div class="wildcards-col col-lg-3 mx-auto text-<?php echo $wildcard_alignment ?> u-focus-style" role="listitem">

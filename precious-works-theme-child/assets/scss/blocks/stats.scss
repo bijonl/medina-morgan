@@ -1,0 +1,21 @@
+.stats-section {
+    padding-top: 100px; 
+    padding-bottom: 100px; 
+    .stats-container {
+        .stats-row {
+            .stats-col {
+                .single-stat-wrapper {
+                    .stat-title-wrapper {
+                        color: $color-secondary; 
+                        padding-top: 30px; 
+                        padding-bottom: 30px; 
+                        .stat-title {
+                            font-size: 55px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,4 +1,10 @@
 <div class="single-wildcard-wrapper h-sm-50">
+    <?php if($link) { ?>
+        <a href="<?php echo $link['url'] ?>" 
+        target="<?php echo $link['target'] ? $link['target'] : '_self'?>"
+        aria-label="visit <?php echo $link['url'] ?>"
+        >
+    <?php } ?>
     <?php if(!empty($image) || !empty($icon)) { ?>
            <div class="wildcard-image-wrapper <?php echo $wildcard_alignment == 'start' ? 'me-auto' : 'mx-auto' ?>">
                 <?php if ($image_type === 'icon') { ?>
@@ -19,9 +25,12 @@
     <div class="wildcard-title-wrapper">
         <h4 class="h3 mb-0"><?php echo esc_html($title); ?></h4>
     </div>
-</div>
-<div class="button-area-wrapper">
-    <div class="wildcard-content-wrapper">
-        <p class="mb-0"><?php echo wp_kses_post($content); ?></p>
+    <div class="content-area-wrapper">
+        <div class="wildcard-content-wrapper">
+            <p class="mb-0"><?php echo wp_kses_post($content); ?></p>
+        </div>
     </div>
+    <?php if($link) { ?>
+        </a>
+    <?php } ?>
 </div>

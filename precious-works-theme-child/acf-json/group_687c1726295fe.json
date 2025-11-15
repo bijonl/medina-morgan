@@ -21,6 +21,35 @@
             "endpoint": 0
         },
         {
+            "key": "field_6918b95b30f32",
+            "label": "Interior Hero Type",
+            "name": "interior_hero_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "full": "Full Sized",
+                "half-sized": "Half Sized"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        },
+        {
             "key": "field_687d2d9c6bc41",
             "label": "Hero Image",
             "name": "hero_image",
@@ -83,5 +112,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755701142
+    "display_title": "",
+    "modified": 1763228049
 }
