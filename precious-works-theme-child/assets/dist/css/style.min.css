@@ -7447,6 +7447,13 @@ small, .small {
   color: rgb(0, 76.5, 153);
 }
 
+.single-staff-hero-area {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 .site-header {
   background-color: #000000;
   padding-top: 40px;

@@ -6,3 +6,4 @@ $last_name = get_field('last_name', $id);
 $full_name = $first_name . ' '. $middle_name.' '.$last_name; 
 $email_address = get_field('email_address', $id);
 $position_display_name = get_field('position_display_name', $id);
+$staff_banner_image = get_field('staff_banner_image');

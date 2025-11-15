@@ -10,6 +10,10 @@ require_once get_stylesheet_directory() . '/includes/custom-post-types/staff.php
 require_once get_stylesheet_directory() . '/includes/custom-post-types/services.php';
 require_once get_stylesheet_directory() . '/includes/custom-post-types/homepage-slides.php';
 require_once get_stylesheet_directory() . '/includes/custom-post-types/jobs.php';
+require_once get_stylesheet_directory() . '/includes/taxonomies/education.php';
+require_once get_stylesheet_directory() . '/includes/taxonomies/admissions.php';
+
+
 
 
 
