@@ -8,9 +8,7 @@ include locate_template('components/variables/staff-variables.php'); ?>
     <?php include locate_template('components/staff/staff-hero.php'); ?>
     <div class="single-staff-container container">
       <div class="single-staff-row row">
-        <div class="single-staff-col col-sm-10 mx-auto">
             <?php include locate_template('components/staff/staff-content.php'); ?>
-        </div>
       </div>
     </div>
 </section>

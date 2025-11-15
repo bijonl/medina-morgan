@@ -5,4 +5,30 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+  
+}
+
+.single-staff-content-container {
+    padding-top: 100px; 
+    padding-bottom: 50px; 
+    .single-staff-content-row {
+        .single-staff-title-col {
+            padding-bottom: 45px; 
+        }
+        .single-staff-bio-col {
+
+        }
+        .single-staff-accordion-col {
+            .single-staff-accordion-wrapper {
+                .single-accordion {
+                    border-bottom: 2px solid #FFF;
+                    margin-bottom: 0; 
+                    &:last-child {
+                        border-bottom: 2px solid $color-secondary;
+                    }
+                }
+            }
+        }
+        
+    }
 }

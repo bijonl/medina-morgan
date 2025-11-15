@@ -368,8 +368,8 @@
             "sub_fields": [
                 {
                     "key": "field_6918d3c806694",
-                    "label": "School",
-                    "name": "school",
+                    "label": "Admission",
+                    "name": "admission",
                     "aria-label": "",
                     "type": "taxonomy",
                     "instructions": "",
@@ -479,5 +479,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1763235433
+    "modified": 1763239258
 }

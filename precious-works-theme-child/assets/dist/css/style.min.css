@@ -120,11 +120,11 @@
   --bs-tertiary-bg: #f8f9fa;
   --bs-tertiary-bg-rgb: 248, 249, 250;
   --bs-heading-color: inherit;
-  --bs-link-color: #0066cc;
-  --bs-link-color-rgb: 0, 102, 204;
+  --bs-link-color: #360584;
+  --bs-link-color-rgb: 54, 5, 132;
   --bs-link-decoration: underline;
-  --bs-link-hover-color: #222;
-  --bs-link-hover-color-rgb: 34, 34, 34;
+  --bs-link-hover-color: #000000;
+  --bs-link-hover-color-rgb: 0, 0, 0;
   --bs-code-color: #d63384;
   --bs-highlight-color: #212529;
   --bs-highlight-bg: rgb(255, 242.6, 205.4);
@@ -7263,11 +7263,11 @@ p {
 }
 
 a {
-  color: #0066cc;
+  color: #360584;
   text-decoration: none;
 }
 a:hover, a:focus {
-  color: #222;
+  color: #000000;
   text-decoration: underline;
 }
 
@@ -7452,6 +7452,21 @@ small, .small {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+.single-staff-content-container {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.single-staff-content-container .single-staff-content-row .single-staff-title-col {
+  padding-bottom: 45px;
+}
+.single-staff-content-container .single-staff-content-row .single-staff-accordion-col .single-staff-accordion-wrapper .single-accordion {
+  border-bottom: 2px solid #FFF;
+  margin-bottom: 0;
+}
+.single-staff-content-container .single-staff-content-row .single-staff-accordion-col .single-staff-accordion-wrapper .single-accordion:last-child {
+  border-bottom: 2px solid #360584;
 }
 
 .site-header {
