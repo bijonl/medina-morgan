@@ -7794,7 +7794,7 @@ small, .small {
   padding: 16px;
 }
 
-.homepage-hero-section {
+.homepage-hero-section, .interior-hero-section {
   height: 100vh;
   position: relative;
   background-repeat: no-repeat;
@@ -7802,50 +7802,59 @@ small, .small {
   background-position: center;
   color: white;
 }
-.homepage-hero-section.block-section {
+.homepage-hero-section.block-section, .interior-hero-section.block-section {
   padding-top: 0;
   padding-bottom: 0;
 }
-.homepage-hero-section .image-overlay {
+.homepage-hero-section .image-overlay, .interior-hero-section .image-overlay {
   background-color: black;
   opacity: 0.75;
   z-index: 1;
   border-radius: 15px;
 }
-.homepage-hero-section .homepage-hero-container {
+.homepage-hero-section .homepage-hero-container, .interior-hero-section .homepage-hero-container {
   z-index: 2;
   position: relative;
 }
-.homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper {
+.homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper, .interior-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper {
   padding-top: 30px;
   padding-left: 60px;
   padding-bottom: 60px;
   padding-right: 60px;
 }
+.homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper.interior-hero, .interior-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper.interior-hero {
+  padding-top: 60px;
+  padding-left: 60px;
+  padding-bottom: 60px;
+  padding-right: 60px;
+}
+.homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper.interior-hero .title-area-container .title-wrapper, .interior-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper.interior-hero .title-area-container .title-wrapper {
+  padding-bottom: 60px;
+}
 @media (max-width: 575.98px) {
-  .homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper {
+  .homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper, .interior-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper {
     padding-top: 30px;
     padding-left: 30px;
     padding-bottom: 30px;
     padding-right: 30px;
   }
 }
-.homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-container {
+.homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-container, .interior-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-container {
   z-index: 2;
   position: relative;
 }
-.homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-content-wrapper {
+.homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-content-wrapper, .interior-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-content-wrapper {
   padding-bottom: 30px;
 }
-.homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-content-wrapper .title-wrapper .h1 {
+.homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-content-wrapper .title-wrapper .h1, .interior-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-content-wrapper .title-wrapper .h1 {
   font-size: 65px;
 }
 @media (max-width: 575.98px) {
-  .homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-content-wrapper .title-wrapper .h1 {
+  .homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-content-wrapper .title-wrapper .h1, .interior-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-content-wrapper .title-wrapper .h1 {
     font-size: 40px;
   }
 }
-.homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .button-area-wrapper {
+.homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .button-area-wrapper, .interior-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .button-area-wrapper {
   text-align: center;
   z-index: 2;
   position: relative;
@@ -7921,49 +7930,6 @@ small, .small {
   padding-bottom: 12px;
 }
 
-.interior-hero-section {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-@media (max-width: 575.98px) {
-  .interior-hero-section {
-    padding-top: 30px;
-  }
-}
-.interior-hero-section .interior-hero-container .interior-hero-row .interior-hero-col .interior-hero-content-wrapper {
-  background-color: transparent;
-}
-.interior-hero-section .interior-hero-container .interior-hero-row .interior-hero-col .interior-hero-content-wrapper .title-wrapper {
-  width: 50%;
-}
-.interior-hero-section .interior-hero-container .interior-hero-row .interior-hero-col .interior-hero-content-wrapper .title-wrapper .title-content-wrapper {
-  width: 50%;
-  margin: auto;
-}
-.interior-hero-section .interior-hero-container .interior-hero-row .interior-hero-col .interior-hero-content-wrapper .title-wrapper .title-content-wrapper .big-title-wrapper {
-  margin-bottom: 25px;
-}
-.interior-hero-section .interior-hero-container .interior-hero-row .interior-hero-col .interior-hero-content-wrapper .title-wrapper .title-content-wrapper .subtitle-wrapper {
-  margin-bottom: 25px;
-}
-@media (max-width: 575.98px) {
-  .interior-hero-section .interior-hero-container .interior-hero-row .interior-hero-col .interior-hero-content-wrapper .title-wrapper {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-}
-.interior-hero-section .interior-hero-container .interior-hero-row .interior-hero-col .interior-hero-content-wrapper .image-wrapper {
-  width: 50%;
-  height: 700px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-@media (max-width: 575.98px) {
-  .interior-hero-section .interior-hero-container .interior-hero-row .interior-hero-col .interior-hero-content-wrapper .image-wrapper {
-    width: 100%;
-  }
-}
-
 .wildcards-section {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -8036,20 +8002,34 @@ small, .small {
 }
 @media (max-width: 992px) {
   .two-column-image-and-text-section .full-bleed-container .full-bleed-row .image-col {
-    width: auto;
+    width: 45%;
     padding-bottom: 35px;
   }
 }
+@media (max-width: 768px) {
+  .two-column-image-and-text-section .full-bleed-container .full-bleed-row .image-col {
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
 .two-column-image-and-text-section .full-bleed-container .full-bleed-row .text-col {
-  width: 45%;
+  margin-left: 10%;
+  width: 35%;
   margin-right: 5%;
 }
 @media (max-width: 1200px) {
   .two-column-image-and-text-section .full-bleed-container .full-bleed-row .text-col {
-    width: 40%;
+    margin-left: 5%;
+    width: 45%;
   }
 }
 @media (max-width: 992px) {
+  .two-column-image-and-text-section .full-bleed-container .full-bleed-row .text-col {
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
   .two-column-image-and-text-section .full-bleed-container .full-bleed-row .text-col {
     width: auto;
   }

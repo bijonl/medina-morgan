@@ -1,6 +1,6 @@
 
 
-.homepage-hero-section {
+.homepage-hero-section, .interior-hero-section {
     height: $homepage-hero-height;
     position: relative;
     background-repeat: no-repeat;
@@ -27,6 +27,18 @@
                     padding-left: 60px; 
                     padding-bottom: 60px; 
                     padding-right: 60px; 
+                    &.interior-hero {
+                        padding-top: 60px; 
+                        padding-left: 60px; 
+                        padding-bottom: 60px; 
+                        padding-right: 60px; 
+                        .title-area-container {
+                            .title-wrapper {
+                                padding-bottom: 60px; 
+                            }
+                        }
+
+                    }
                     @include media-breakpoint-down(sm) {
                         padding-top: 30px; 
                         padding-left: 30px; 

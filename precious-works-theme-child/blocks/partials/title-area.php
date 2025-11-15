@@ -1,7 +1,6 @@
 <?php 
 $display_title = !empty($display_title) ? $display_title : 'h2'; 
-$display_title .= ' mb-0'; 
-?>
+$display_title .= ' mb-0'; ?>
 
 <?php if ($has_title_area) { ?>
     <section 
@@ -15,7 +14,7 @@ $display_title .= ' mb-0';
                     
                     <?php if (!empty($section_title)) { ?>
                         <div class="title-wrapper">
-                            <?php 
+                            <?php
                                 // Heading gets an ID so region can be linked to it
                                 echo pw_seo_heading(
                                     $section_title, 
