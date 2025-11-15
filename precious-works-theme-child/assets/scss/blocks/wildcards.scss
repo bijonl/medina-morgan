@@ -3,7 +3,25 @@
     padding-bottom: 90px; 
     .wildcards-container {
         .wildcards-row {
+            &.row-cols-lg-4 {
+                .wildcards-col {
+                     &:nth-last-child(-n + 4) {
+                        padding-bottom: 0; 
+                    }
+                }
+            }
+            &.row-cols-lg-3 {
+                .wildcards-col {
+                     &:nth-last-child(-n + 3) {
+                        padding-bottom: 0; 
+                    }
+                }
+            }
             .wildcards-col {
+                
+                padding-bottom: 100px; 
+               
+               
                 @include media-breakpoint-down(sm) {
                     padding-bottom: 40px; 
                 }
@@ -13,13 +31,13 @@
                     // }
                      
                     .wildcard-image-wrapper {
-                        margin: auto;
+                        // margin: auto;
                         padding-bottom: $wildcard-element-spacing; 
                         i {
                             font-size: 65px; 
                         }
                         &:has(img) {
-                            max-width: 70px;
+                            max-width: 50px;
                         }
                         img {
                             width: 100%; 

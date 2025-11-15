@@ -1,5 +1,24 @@
 
 .accordions-container {
+    &.full-bleed-container {
+        .accordions-row {
+            .accordions-col {
+                width: 45%; 
+                @media (max-width: 768px) {
+                    width: 90%; 
+                    margin: auto; 
+                }
+            }
+            .accordion-col-content {
+                width: 45%; 
+                @media (max-width: 768px) {
+                    width: 90%; 
+                    margin: auto; 
+                    padding-bottom: 40px; 
+                }
+            }
+        }
+    }
     .accordions-row {
         .accordions-col {
             .single-accordion {

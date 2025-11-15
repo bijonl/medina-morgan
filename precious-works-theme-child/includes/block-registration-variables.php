@@ -71,7 +71,7 @@
     ],
     'stats' => [
         'label' => 'Stats',
-        'icon'  => 'number',
+        'icon'  => 'calculator',
         'description' => "This allows you to provide quick stats at a glance."
     ],
     'two-col-img-text' => [

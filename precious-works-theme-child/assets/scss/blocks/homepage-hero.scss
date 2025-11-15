@@ -37,6 +37,17 @@
                                 padding-bottom: 60px; 
                             }
                         }
+                        @include media-breakpoint-down(sm) {
+                            padding-top: 30px; 
+                            padding-left: 30px; 
+                            padding-bottom: 30px; 
+                            padding-right: 30px; 
+                            .title-area-container {
+                                .title-wrapper {
+                                    padding-bottom: 30px; 
+                                }
+                            }
+                        }
 
                     }
                     @include media-breakpoint-down(sm) {

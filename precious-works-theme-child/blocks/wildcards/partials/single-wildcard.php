@@ -1,6 +1,6 @@
 <div class="single-wildcard-wrapper h-sm-50">
     <?php if(!empty($image) || !empty($icon)) { ?>
-           <div class="wildcard-image-wrapper">
+           <div class="wildcard-image-wrapper <?php echo $wildcard_alignment == 'start' ? 'me-auto' : 'mx-auto' ?>">
                 <?php if ($image_type === 'icon') { ?>
                     <span class="wildcard-icon" role="img" aria-label="<?php echo esc_attr($title); ?>">
                         <?php echo $icon; ?>
@@ -9,7 +9,7 @@
                     // Get alt text or fallback
                     $alt = get_post_meta($image, '_wp_attachment_image_alt', true);
                     $alt = $alt ?: esc_attr($title); // Fallback to title
-                    echo wp_get_attachment_image($image, 'thumbnail', false, ['alt' => $alt]);
+                    echo wp_get_attachment_image($image, 'full', false, ['alt' => $alt]);
                 } ?>
             </div>
 

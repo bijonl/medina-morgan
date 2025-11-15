@@ -43,6 +43,28 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
+                    "key": "field_6918a7c329af2",
+                    "label": "Top Line",
+                    "name": "top_line",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_68efd6331260c"
+                },
+                {
                     "key": "field_68efd63e1260d",
                     "label": "Number",
                     "name": "number",
@@ -108,5 +130,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1760549294
+    "modified": 1763224122
 }

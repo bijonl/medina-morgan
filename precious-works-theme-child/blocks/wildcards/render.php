@@ -1,5 +1,6 @@
 <?php $wildcards = get_field('wildcards');
 $cards_per_row = get_field('cards_per_row') ? get_field('cards_per_row') : 4;
+$wildcard_alignment = get_field('wildcard_alignment') ? get_field('wildcard_alignment') : 'center'; 
 include(locate_template('blocks/partials/global-block-variables.php')); ?>
 
 <?php $has_content = have_rows('wildcards') || $has_button_area || $has_title_area;
@@ -25,7 +26,7 @@ if(!$has_content) {
                         $content = get_sub_field('content'); 
                         $wildcard_id = 'wildcard-'.get_row_index(); 
                         ?>
-                        <div class="wildcards-col col-lg-3 mx-auto text-center u-focus-style" role="listitem">
+                        <div class="wildcards-col col-lg-3 mx-auto text-<?php echo $wildcard_alignment ?> u-focus-style" role="listitem">
                             <?php include(locate_template('blocks/wildcards/partials/single-wildcard.php'));  ?>
                         </div>     
                 <?php   
