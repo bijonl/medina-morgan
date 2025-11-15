@@ -74,6 +74,11 @@
         'icon'  => 'calculator',
         'description' => "This allows you to provide quick stats at a glance."
     ],
+    'two-col-text' => [
+        'label' => 'Two Column Text',
+        'icon'  => 'columns',
+        'description' => "Split the section into two halves: both sides are text column."
+    ],
     'two-col-img-text' => [
         'label' => 'Two Column Image and Text',
         'icon'  => 'columns',

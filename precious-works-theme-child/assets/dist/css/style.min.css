@@ -8133,6 +8133,16 @@ small, .small {
   padding-bottom: 40px;
 }
 
+.two-column-text-section .text-col {
+  column-count: 2;
+  column-gap: 70px;
+}
+@media (max-width: 767.98px) {
+  .two-column-text-section .text-col {
+    column-count: 1;
+  }
+}
+
 .glide {
   position: relative;
   width: 100%;

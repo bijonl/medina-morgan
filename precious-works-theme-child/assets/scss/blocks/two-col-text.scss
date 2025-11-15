@@ -1,0 +1,9 @@
+.two-column-text-section  {
+    .text-col {
+        column-count: 2;
+        column-gap: 70px;
+        @include media-breakpoint-down(md) {
+            column-count: 1;
+        }
+    }
+}
