@@ -16,7 +16,7 @@ require_once get_stylesheet_directory() . '/includes/taxonomies/admissions.php';
 
 
 
-
+add_image_size( 'recent-post-thumbnail', 600, 500, true ); 
 add_image_size( 'service-card', 800, 360, true ); 
 
 

@@ -1,0 +1,23 @@
+.single-staff-post-title-row {
+    padding-bottom: 50px; 
+}
+
+.single-post-tile {
+    .single-post-image-wrapper {
+        background-size: cover; 
+        background-position: center;
+    }
+    .single-post-title-wrapper {
+        background-color: $color-text-alt; 
+        color: $color-primary; 
+        aspect-ratio: 1.2/1;
+        padding: 20px; 
+        .post-title {
+            padding-bottom: 30px; 
+        }
+        p {
+            margin: 0;
+        }
+    }
+
+}

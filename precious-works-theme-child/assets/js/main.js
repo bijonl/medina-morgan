@@ -60,18 +60,45 @@ document.addEventListener("scroll", function () {
 });
 
 
-new Glide('.service-glide', {
-  type: 'carousel',
-  startAt: 0,
-  perView: 3,
-   breakpoints: {
-    1024: {
-      perView: 2
+if (document.querySelector('.service-glide')) {
+  new Glide('.service-glide', {
+    type: 'carousel',
+    startAt: 0,
+    perView: 3,
+    breakpoints: {
+      1024: {
+        perView: 2
+      },
+      600: {
+        perView: 1
+      }
     },
-    600: {
-      perView: 1
-    }
-  },
-  autoplay: 3000,
-  hoverpause: false,
-}).mount({}); 
+    autoplay: 3000,
+    hoverpause: false,
+  }).mount();
+}
+
+function setEqualHeight(className) {
+    const elements = document.querySelectorAll(`.${className}`);
+    if (!elements.length) return;
+
+    // Reset heights first (in case of resize)
+    elements.forEach(el => el.style.height = 'auto');
+
+    // Find the tallest element
+    let maxHeight = 0;
+    elements.forEach(el => {
+        const elHeight = el.offsetHeight;
+        if (elHeight > maxHeight) maxHeight = elHeight;
+    });
+
+    // Set all elements to tallest height
+    elements.forEach(el => el.style.height = maxHeight + 'px');
+}
+
+// Usage example
+setEqualHeight('single-post-tile');
+
+// Optional: Update on window resize
+window.addEventListener('resize', () => setEqualHeight('single-post-tile'));
+

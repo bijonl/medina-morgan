@@ -7469,6 +7469,10 @@ small, .small {
   border-bottom: 2px solid #360584;
 }
 
+.staff-posts-content-section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
 .site-header {
   background-color: #000000;
   padding-top: 40px;
@@ -7670,6 +7674,27 @@ small, .small {
 
 .button-row {
   margin-top: 30px;
+}
+
+.single-staff-post-title-row {
+  padding-bottom: 50px;
+}
+
+.single-post-tile .single-post-image-wrapper {
+  background-size: cover;
+  background-position: center;
+}
+.single-post-tile .single-post-title-wrapper {
+  background-color: #ffffff;
+  color: #000000;
+  aspect-ratio: 1.2/1;
+  padding: 20px;
+}
+.single-post-tile .single-post-title-wrapper .post-title {
+  padding-bottom: 30px;
+}
+.single-post-tile .single-post-title-wrapper p {
+  margin: 0;
 }
 
 .single-accordion {

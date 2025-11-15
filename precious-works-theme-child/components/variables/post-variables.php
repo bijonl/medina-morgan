@@ -1,7 +1,5 @@
-<?php 
-
-$permalink = get_the_permalink($id); 
-$featured_image = get_the_post_thumbnail($id, 'full', array('class' => '')); 
+<?php $permalink = get_the_permalink($id); 
+$featured_image = get_post_thumbnail_id ($id, 'full', array('class' => '')); 
 $default_blog_image = get_field('default_blog_image', 'options');
 $title = get_the_title($id); 
 $publish_date = get_the_date($id); 
@@ -15,10 +13,4 @@ if ($terms) {
 }
 
 $excerpt = get_the_excerpt($id); 
-$blog_intro = get_field('blog_intro', $id); 
-
-
-
-
-
-?>
+$blog_intro = get_field('blog_intro', $id); ?>

@@ -6,11 +6,9 @@ include locate_template('components/variables/staff-variables.php'); ?>
 
 <section class="single-staff-section" id="staff-content">
     <?php include locate_template('components/staff/staff-hero.php'); ?>
-    <div class="single-staff-container container">
-      <div class="single-staff-row row">
-            <?php include locate_template('components/staff/staff-content.php'); ?>
-      </div>
-    </div>
+    <?php include locate_template('components/staff/staff-content.php'); ?>
+    <?php include locate_template('components/staff/staff-posts.php'); ?>
+   
 </section>
 
 
