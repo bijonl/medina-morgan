@@ -1,9 +1,18 @@
 .two-column-text-section  {
+    padding-top: 100px; 
+    padding-bottom: 100px; 
     .text-col {
         column-count: 2;
         column-gap: 70px;
         @include media-breakpoint-down(md) {
             column-count: 1;
+        }
+        .title-wrapper {
+            color: $color-secondary; 
+            padding-bottom: 50px; 
+            @include media-breakpoint-down(md) {
+                padding-bottom: 0;
+            }
         }
     }
 }

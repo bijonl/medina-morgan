@@ -24,7 +24,7 @@ $text_col_width = 'col-lg-12' ?>
                             echo pw_seo_heading(
                                 $section_title, 
                                 $section_title_tag, 
-                                'h1', 
+                                'h2 mb-0', 
                                 [ 'id' => 'section-title-' . esc_attr($block['id']), 'class' => 'u-focus-style' ]
                             ); 
                         ?>
