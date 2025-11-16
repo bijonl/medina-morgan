@@ -61,6 +61,27 @@
             "rows": "",
             "placeholder": "",
             "new_lines": ""
+        },
+        {
+            "key": "field_691a0423ed1b3",
+            "label": "Longer Service Description",
+            "name": "longer_service_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "This will be used as the description in the hero area of the individual service page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
         }
     ],
     "location": [
@@ -81,5 +102,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1762548811
+    "display_title": "",
+    "modified": 1763312748
 }

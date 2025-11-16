@@ -1,4 +1,18 @@
 .two-column-image-and-text-section {
+    &.service-block {
+        .text-col {
+            line-height: 1; 
+            .title-wrapper {
+                padding-bottom: 20px;
+            }
+
+        }
+        .image-col {
+            img {
+                max-height: 300px;
+            }
+        }
+    }
     .full-bleed-container {
         .full-bleed-row {
             justify-content: end;
@@ -12,6 +26,16 @@
                     width: auto; 
                     margin-left: 5%; 
                     margin-right: 5%; 
+                }
+                &.order-first {
+                    img { 
+                        border-radius: 0 15px 15px 0;
+                    }
+                }
+                 &.order-last {
+                    img { 
+                        border-radius: 15px 0 0 15px;
+                    }
                 }
             }
             .text-col {

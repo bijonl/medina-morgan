@@ -31,6 +31,10 @@
     color: inherit; 
 }
 
+.color-secondary {
+    color: $color-secondary
+}
+
 .background-primary {
     color: $primary-background-text-color; 
     background-color: $primary-background-color; 

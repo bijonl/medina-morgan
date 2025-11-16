@@ -7014,6 +7014,10 @@ progress {
   color: inherit;
 }
 
+.color-secondary {
+  color: #360584;
+}
+
 .background-primary {
   color: #ffffff;
   background-color: #000000;
@@ -8164,6 +8168,15 @@ small, .small {
   margin-bottom: 0;
 }
 
+.two-column-image-and-text-section.service-block .text-col {
+  line-height: 1;
+}
+.two-column-image-and-text-section.service-block .text-col .title-wrapper {
+  padding-bottom: 20px;
+}
+.two-column-image-and-text-section.service-block .image-col img {
+  max-height: 300px;
+}
 .two-column-image-and-text-section .full-bleed-container .full-bleed-row {
   justify-content: end;
 }
@@ -8182,6 +8195,12 @@ small, .small {
     margin-left: 5%;
     margin-right: 5%;
   }
+}
+.two-column-image-and-text-section .full-bleed-container .full-bleed-row .image-col.order-first img {
+  border-radius: 0 15px 15px 0;
+}
+.two-column-image-and-text-section .full-bleed-container .full-bleed-row .image-col.order-last img {
+  border-radius: 15px 0 0 15px;
 }
 .two-column-image-and-text-section .full-bleed-container .full-bleed-row .text-col {
   margin-left: 10%;
@@ -8268,6 +8287,10 @@ small, .small {
 .two-column-text-section {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.two-column-text-section.service-block .text-col {
+  line-height: 1;
+  column-count: 1;
 }
 .two-column-text-section .text-col {
   column-count: 2;

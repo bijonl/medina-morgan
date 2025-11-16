@@ -6,4 +6,7 @@ $service_display_name = $service_display ? $service_display : $service_title;
 $quick_service_summary = get_field('quick_service_summary', $id);
 $service_permalink = get_the_permalink($id); 
 
+
+$longer_service_description = get_field('longer_service_description');
+
 ?>
