@@ -1,11 +1,56 @@
 
 
 .single-staff-hero-area {
-    height: 100vh; 
+    height: 50vh; 
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
-  
+    background-position: top;
+    @media (min-width: 1200px) {
+         height: 75vh; 
+    }
+     @media (min-width: 1440px) {
+         height: 100vh; 
+    }
+    .staff-hero-content-wrapper {
+        padding-left: 40px; 
+        padding-bottom: 60px; 
+        padding-right: 40px; 
+        padding-top: 60px; 
+        border-radius: 15px;
+        @include media-breakpoint-down(sm) {
+            padding-left: 30px; 
+            padding-bottom: 30px; 
+            padding-right: 30px; 
+            padding-top: 30px; 
+
+        }
+        .contact-wrapper {
+            padding-top: 50px; 
+
+            .contact-info-wrapper {
+                @include media-breakpoint-down(sm) { 
+                    padding-bottom: 5px; 
+                }
+                .phone {
+                    padding-bottom: 5px; 
+                }
+                a {
+                    &:hover {
+                        color: inherit; 
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .button-email-wrapper {
+                @include media-breakpoint-down(xl) { 
+                    padding-top: 15px; 
+                }
+                a {
+                    width: 100%; 
+                }
+            }
+        }
+    }
 }
 
 .single-staff-content-container {
@@ -38,7 +83,7 @@
     padding-bottom: 90px; 
     .single-staff-posts-content-row {
         .single-post-tile-col {
-            
+
         }
     }
 }

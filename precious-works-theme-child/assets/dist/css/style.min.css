@@ -7448,10 +7448,58 @@ small, .small {
 }
 
 .single-staff-hero-area {
-  height: 100vh;
+  height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: top;
+}
+@media (min-width: 1200px) {
+  .single-staff-hero-area {
+    height: 75vh;
+  }
+}
+@media (min-width: 1440px) {
+  .single-staff-hero-area {
+    height: 100vh;
+  }
+}
+.single-staff-hero-area .staff-hero-content-wrapper {
+  padding-left: 40px;
+  padding-bottom: 60px;
+  padding-right: 40px;
+  padding-top: 60px;
+  border-radius: 15px;
+}
+@media (max-width: 575.98px) {
+  .single-staff-hero-area .staff-hero-content-wrapper {
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+  }
+}
+.single-staff-hero-area .staff-hero-content-wrapper .contact-wrapper {
+  padding-top: 50px;
+}
+@media (max-width: 575.98px) {
+  .single-staff-hero-area .staff-hero-content-wrapper .contact-wrapper .contact-info-wrapper {
+    padding-bottom: 5px;
+  }
+}
+.single-staff-hero-area .staff-hero-content-wrapper .contact-wrapper .contact-info-wrapper .phone {
+  padding-bottom: 5px;
+}
+.single-staff-hero-area .staff-hero-content-wrapper .contact-wrapper .contact-info-wrapper a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+@media (max-width: 1199.98px) {
+  .single-staff-hero-area .staff-hero-content-wrapper .contact-wrapper .button-email-wrapper {
+    padding-top: 15px;
+  }
+}
+.single-staff-hero-area .staff-hero-content-wrapper .contact-wrapper .button-email-wrapper a {
+  width: 100%;
 }
 
 .single-staff-content-container {
