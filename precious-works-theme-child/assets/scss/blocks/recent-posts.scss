@@ -8,6 +8,9 @@
         .recent-posts-row {
             .recent-posts-col {
                 .single-post-tile {
+                    @include media-breakpoint-down(lg) {
+                        margin-bottom: 30px; 
+                    }
                     .single-post-image-wrapper {
                         padding-bottom: $recent-post-spacing; 
                         img {

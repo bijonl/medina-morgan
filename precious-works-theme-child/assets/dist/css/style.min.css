@@ -7877,6 +7877,11 @@ small, .small {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media (max-width: 991.98px) {
+  .recent-posts-section .recent-posts-container .recent-posts-row .recent-posts-col .single-post-tile {
+    margin-bottom: 30px;
+  }
+}
 .recent-posts-section .recent-posts-container .recent-posts-row .recent-posts-col .single-post-tile .single-post-image-wrapper {
   padding-bottom: 20px;
 }
@@ -8235,6 +8240,27 @@ small, .small {
 }
 .two-column-image-and-text-section.service-block .image-col img {
   max-height: 300px;
+}
+.two-column-image-and-text-section.service-block .full-bleed-container .full-bleed-row .text-col {
+  margin-left: 5%;
+  width: 50%;
+  margin-right: 5%;
+}
+@media (max-width: 1200px) {
+  .two-column-image-and-text-section.service-block .full-bleed-container .full-bleed-row .text-col {
+    margin-left: 5%;
+    width: 45%;
+  }
+}
+@media (max-width: 992px) {
+  .two-column-image-and-text-section.service-block .full-bleed-container .full-bleed-row .text-col {
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  .two-column-image-and-text-section.service-block .full-bleed-container .full-bleed-row .text-col {
+    width: auto;
+  }
 }
 .two-column-image-and-text-section .full-bleed-container .full-bleed-row {
   justify-content: end;

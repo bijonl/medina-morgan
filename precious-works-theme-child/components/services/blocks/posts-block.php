@@ -13,14 +13,14 @@ $section_button = get_sub_field('button');
         <div class="recent-posts-container container">
             <div class="recent-posts-row row">
                 <?php foreach($recent_posts as $id) { ?>
-                    <div class="recent-posts-col col-sm-6">
+                    <div class="recent-posts-col col-lg-6">
                         <?php include(locate_template('blocks/recent-posts/partials/single-post.php'));  ?>
                     </div>
                 <?php } ?>
             </div>
             <?php if($section_button) { ?>
                 <div class="button-row row">
-                    <div class="button-col col-sm-12 mx-auto text-end">
+                    <div class="button-col col-lg-12 mx-auto text-end">
                         <?php include(locate_template('blocks/partials/button-area.php')); ?>
                     </div>
                 </div>   

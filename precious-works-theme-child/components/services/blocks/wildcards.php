@@ -10,7 +10,7 @@ $wildcard_bottom_text = get_sub_field('wildcard_bottom_text');
 
 ?>
 
-<section class="background-secondary service-block wildcards-section">
+<section class="background-secondary service-block wildcards-section <?php echo $padding_class ?>" id="<?php echo $anchor_link ?>">
     <?php include(locate_template('blocks/partials/title-area.php')); ?> 
     <div class="wildcards-container container">
         <div class="wildcards-row row row-cols-1 gx-5 row-cols-md-2 row-cols-lg-<?php echo $cards_per_row ?>" role="list">
