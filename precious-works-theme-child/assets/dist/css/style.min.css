@@ -7526,6 +7526,21 @@ small, .small {
   padding-top: 90px;
   padding-bottom: 90px;
 }
+.cta-staff-contact-section.service-block {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.cta-staff-contact-section .cta-staff-contact-col .title-wrapper {
+  padding-bottom: 30px;
+}
+.cta-staff-contact-section .cta-staff-contact-col .content-wrapper {
+  padding-bottom: 30px;
+}
+
+.single-service-footer-container {
+  padding-bottom: 50px;
+}
+
 .site-header {
   background-color: #000000;
   padding-top: 40px;
@@ -7804,6 +7819,27 @@ small, .small {
 }
 .single-accordion .accordion-content.is-open {
   padding: 16px;
+}
+
+@media (max-width: 575.98px) {
+  .staff-member-card {
+    padding-bottom: 30px;
+  }
+}
+.staff-member-card .staff-image-wrapper {
+  padding-bottom: 25px;
+}
+@media (max-width: 1199.98px) {
+  .staff-member-card .staff-meta-wrapper .staff-text-wrapper {
+    padding-bottom: 15px;
+  }
+}
+.staff-member-card .staff-meta-wrapper .staff-text-wrapper .staff-name-title {
+  margin-bottom: 0;
+  padding-bottom: 15px;
+}
+.staff-member-card .staff-meta-wrapper .staff-text-wrapper p {
+  margin-bottom: 0;
 }
 
 .reviews-section .reviews-container .reviews-row .reviews-col .masonry-review-card {

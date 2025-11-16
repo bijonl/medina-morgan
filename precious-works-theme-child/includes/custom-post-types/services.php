@@ -38,11 +38,11 @@
         ),
         'hierarchical'        => true,
         'query_var'           => true,
-        'has_archive'         => false,
+        'has_archive'         => true,
         'exclude_from_search' => true,
         'menu_icon'           => 'dashicons-bank',
         'show_in_rest'        => true,
-        'supports'            => array( 'title', 'thumbnail'),
+        'supports'            => array( 'title', 'thumbnail', 'page-attributes'),
         'labels'              => $labels,
         'map_meta_cap'        => true,
     ));

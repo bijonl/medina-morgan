@@ -1,14 +1,18 @@
-<?php echo get_header(); ?>
-<?php $id = get_the_id(); ?>
+<?php echo get_header(); 
+$id = get_the_id(); ?>
 
 
 
-<section class="single-service" id="service-content">
+
+
+
+
+
+<main class="single-service" id="service-content">
     <?php include locate_template('components/services/service-hero.php');
 
     // Check value exists.
     if( have_rows('service_blocks') ) {
-
         // Loop through rows.
         while ( have_rows('service_blocks') ) {
             the_row();
@@ -24,13 +28,22 @@
                 include locate_template('components/services/blocks/cta_block_staff_contact.php');
             }
         } 
-    } 
+    } ?>
+    <nav class="single-service-footer-container container" aria-label="Service page navigation">
+        <div class="single-service-footer-row row justify-content-between">
+            <div class="single-service-footer-col col">
+            <a href="/practices" class="single-service-nav-link">
+                Back to all practices
+            </a>
+            </div>
+            <div class="single-service-footer-col col text-end">
+                <?php include locate_template('components/services/next-service-query.php'); ?>
+            </div>
+        </div>
+    </nav>
 
-?>
-   
-</section>
 
 
-
+</main>
 
 <?php echo get_footer(); ?>

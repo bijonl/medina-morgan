@@ -9,7 +9,7 @@ $text_col_width = 'col-lg-8 ms-auto' ?>
 
 <section class="cta-staff-contact-section service-block">
     <div class="cta-staff-contact-container container">
-        <div class="cta-staff-contact-row row">
+        <div class="cta-staff-contact-row row align-items-center">
             <div class="single-staff-contact-col col-sm-3">
                 <?php if($staff_member) {
                     foreach($staff_member as $id) {
@@ -43,7 +43,9 @@ $text_col_width = 'col-lg-8 ms-auto' ?>
                         ?>
                     </div>
                 <?php } ?>
-                <?php echo $cta_content ?>
+                <div class="content-wrapper wysiwyg">
+                    <?php echo $cta_content ?>
+                </div>
                    <?php if($section_button) { ?>
                     <?php include(locate_template('blocks/partials/button-area.php')); ?>
             <?php } ?>

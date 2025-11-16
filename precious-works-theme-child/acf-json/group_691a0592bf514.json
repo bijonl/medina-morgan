@@ -85,6 +85,69 @@
                             "toolbar": "full",
                             "media_upload": 0,
                             "delay": 0
+                        },
+                        {
+                            "key": "field_691a2eeceb2e9",
+                            "label": "Anchor Link",
+                            "name": "anchor_link",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_691a2efceb2ea",
+                            "label": "No Top Padding",
+                            "name": "no_top_padding",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_691a2f1aeb2eb",
+                            "label": "No Bottom Padding",
+                            "name": "no_bottom_padding",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
                         }
                     ],
                     "min": "",
@@ -564,5 +627,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1763322923
+    "modified": 1763323693
 }
