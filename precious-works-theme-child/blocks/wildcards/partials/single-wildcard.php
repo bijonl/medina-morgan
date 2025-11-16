@@ -5,7 +5,7 @@
         aria-label="visit <?php echo $link['url'] ?>"
         >
     <?php } ?>
-    <?php if(!empty($image) || !empty($icon)) { ?>
+    <?php if(!empty($image) || !empty($icon) || !isset($heading)) { ?>
            <div class="wildcard-image-wrapper <?php echo $wildcard_alignment == 'start' ? 'me-auto' : 'mx-auto' ?>">
                 <?php if ($image_type === 'icon') { ?>
                     <span class="wildcard-icon" role="img" aria-label="<?php echo esc_attr($title); ?>">
@@ -16,7 +16,9 @@
                     $alt = get_post_meta($image, '_wp_attachment_image_alt', true);
                     $alt = $alt ?: esc_attr($title); // Fallback to title
                     echo wp_get_attachment_image($image, 'full', false, ['alt' => $alt]);
-                } ?>
+                } elseif (!empty($heading)) { ?>
+                    <h2 class="mb-0"><?php echo $heading ?></h2>
+                <?php } ?>
             </div>
 
 

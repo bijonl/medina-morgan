@@ -14,13 +14,16 @@
             the_row();
             if( get_row_layout() == 'two_column_text_text' ) {
                 include locate_template('components/services/blocks/two-col-text-block.php');
-            }
-            elseif( get_row_layout() == 'two_column_image_text' ) {
+            } elseif( get_row_layout() == 'two_column_image_text' ) {
                 include locate_template('components/services/blocks/two-col-img-text.php');
+            } elseif( get_row_layout() == 'wildcards' ) {
+                include locate_template('components/services/blocks/wildcards.php');
+            } elseif( get_row_layout() == 'posts_block' ) {
+                include locate_template('components/services/blocks/posts-block.php');
+            } elseif( get_row_layout() == 'cta_block_staff_contact' ) {
+                include locate_template('components/services/blocks/cta_block_staff_contact.php');
             }
-
         } 
-
     } 
 
 ?>

@@ -7067,6 +7067,7 @@ progress {
 }
 
 .pw-solid-button {
+  text-align: center;
   display: inline-block;
   background-color: #360584;
   border: solid 1px #360584;
@@ -7732,6 +7733,9 @@ small, .small {
   padding-bottom: 50px;
 }
 
+.single-post-tile {
+  border: solid 1px #EDEDED;
+}
 .single-post-tile .single-post-image-wrapper {
   background-size: cover;
   background-position: center;
@@ -7829,6 +7833,10 @@ small, .small {
   color: inherit;
 }
 
+.recent-posts-section.service-block {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .recent-posts-section .recent-posts-container .recent-posts-row .recent-posts-col .single-post-tile .single-post-image-wrapper {
   padding-bottom: 20px;
 }
@@ -8085,6 +8093,13 @@ small, .small {
   padding-top: 90px;
   padding-bottom: 90px;
 }
+.wildcards-section.service-block {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.wildcards-section.service-block .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper .wildcard-content-wrapper {
+  padding-bottom: 60px;
+}
 .wildcards-section .wildcards-container .wildcards-row.row-cols-lg-4 .wildcards-col:nth-last-child(-n+4) {
   margin-bottom: 0;
 }
@@ -8168,6 +8183,10 @@ small, .small {
   margin-bottom: 0;
 }
 
+.two-column-image-and-text-section.service-block {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
 .two-column-image-and-text-section.service-block .text-col {
   line-height: 1;
 }

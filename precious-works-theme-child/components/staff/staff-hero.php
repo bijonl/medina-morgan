@@ -1,8 +1,4 @@
-<?php 
-
-
-$hero_alignment = 'text-start';
- ?>
+<?php $hero_alignment = 'text-start'; ?>
 
 <section class="single-staff-hero-area" style="background-image: url('<?php echo $staff_banner_image['url'] ?>')">
 

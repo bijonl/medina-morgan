@@ -1,6 +1,21 @@
 .wildcards-section {
     padding-top: 90px; 
     padding-bottom: 90px; 
+    &.service-block {
+        padding-top: 50px; 
+        padding-bottom: 50px;
+        .wildcards-container {
+            .wildcards-row {
+                .wildcards-col {
+                    .single-wildcard-wrapper  {
+                        .wildcard-content-wrapper {
+                            padding-bottom: 60px; 
+                        }
+                    }
+                }
+            }
+        }
+    }
     .wildcards-container {
         .wildcards-row {
             &.row-cols-lg-4 {

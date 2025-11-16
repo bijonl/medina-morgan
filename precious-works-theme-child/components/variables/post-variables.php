@@ -5,6 +5,8 @@ $title = get_the_title($id);
 $publish_date = get_the_date($id); 
 $terms = get_the_terms($id, 'category'); 
 $author_display_name = get_field('author_display_name', $id);
+$excerpt = get_the_excerpt($id); 
+
 
 if ($terms) {
     $terms = array_filter($terms, function($term) {
