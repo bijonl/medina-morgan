@@ -7541,6 +7541,10 @@ small, .small {
   padding-bottom: 50px;
 }
 
+.single-service-nav-container {
+  padding-top: 50px;
+}
+
 .site-header {
   background-color: #000000;
   padding-top: 40px;

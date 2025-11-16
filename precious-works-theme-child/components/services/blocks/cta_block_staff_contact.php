@@ -7,7 +7,7 @@ $section_button = get_sub_field('section_button');
 
 $text_col_width = 'col-lg-8 ms-auto' ?>
 
-<section class="cta-staff-contact-section service-block">
+<section class="cta-staff-contact-section service-block <?php echo $padding_class ?>" id="<?php echo $anchor_link ?>">
     <div class="cta-staff-contact-container container">
         <div class="cta-staff-contact-row row align-items-center">
             <div class="single-staff-contact-col col-sm-3">

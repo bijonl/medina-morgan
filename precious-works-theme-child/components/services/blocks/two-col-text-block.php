@@ -2,10 +2,6 @@
 $section_title = get_sub_field('section_title'); 
 $first_column_text = get_sub_field('first_column_text');
 $second_column_text = get_sub_field('second_column_text');
-$no_top_padding = get_sub_field('no_top_padding') ? 'pt-0': ''; 
-$no_bottom_padding = get_sub_field('no_bottom_padding') ? 'pb-0': ''; 
-$padding_class = $no_bottom_padding.' '.$no_top_padding; 
-$anchor_link = get_sub_field('anchor_link'); 
 
 
 $text_col_width = 'col-lg-6' ?>

@@ -5,7 +5,7 @@ $recent_posts = get_sub_field('posts');
 $section_button = get_sub_field('button'); 
 ?>
 
-<section class="recent-posts-section service-block background-primary">
+<section class="recent-posts-section service-block background-primary <?php echo $padding_class ?>" id="<?php echo $anchor_link ?>">
     <?php if($has_title_area) { 
         include(locate_template('blocks/partials/title-area.php'));
     } ?>

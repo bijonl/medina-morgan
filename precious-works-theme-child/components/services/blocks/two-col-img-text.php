@@ -11,7 +11,7 @@ $is_full = $image_style === 'full';
 $image_col_width = !$is_full ? 'col-lg-6' : ''; 
 $text_col_width = !$is_full ? 'col-lg-6' : ''?>
 
-<section class="two-column-image-and-text-section service-block">
+<section class="two-column-image-and-text-section service-block <?php echo $padding_class ?>" id="<?php echo $anchor_link ?>">
     <div class="two-col-container <?php echo !$is_full ? 'container': 'full-bleed-container' ?>">
         <div class="two-col-row <?php echo !$is_full ? 'row align-items-center': 'full-bleed-row d-lg-flex align-items-center' ?> ">
             <div class="two-col-col image-col <?php echo $image_col_width ?> <?php echo $column_order ?>">
