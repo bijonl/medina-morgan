@@ -1,4 +1,4 @@
-<?php  $title = 'Admissions'; 
+<?php  $title = get_field('admissions_accordion_title', 'options') ? get_field('admissions_accordion_title', 'options') : 'Admissions';
     $content = ''; 
     $accordion_id = 'accordion-admission';
     ob_start(); ?>

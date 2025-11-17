@@ -1,4 +1,4 @@
-<?php  $title = 'Practice Areas'; 
+<?php  $title = get_field('practice_areas_accordion_title', 'options') ? get_field('practice_areas_accordion_title', 'options') : 'Practices';
     $content = ''; 
     $accordion_id = 'accordion-practice-areas';
     ob_start(); ?>

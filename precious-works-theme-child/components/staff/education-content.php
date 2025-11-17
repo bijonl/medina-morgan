@@ -1,4 +1,4 @@
-<?php $title = 'Education'; 
+<?php $title = get_field('education_accordion_title', 'options') ? get_field('education_accordion_title', 'options') : 'Education'; 
     $content = ''; 
     $accordion_id = 'accordion-education';
     ob_start(); ?>
