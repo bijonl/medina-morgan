@@ -1,6 +1,6 @@
 <?php echo get_header(); 
 $id = get_the_id(); 
-$back_to_all_practices_permalink = '#'; 
+$back_to_all_practices_permalink = $top_level_practice_page = get_field('top_level_practice_page', 'options'); 
 $back_to_all_practices_text = 'Back to All Practice Areas'
 ?>
 
@@ -17,7 +17,7 @@ $back_to_all_practices_text = 'Back to All Practice Areas'
     <div class="single-service-nav-container container" aria-label="Back to all practices navigation">
         <div class="single-service-nav-row row justify-content-between">
             <div class="single-service-nav-col col">
-                <a href="<?php echo $back_to_all_practices_permalink ?>" class="single-service-nav-link">
+                <a href="<?php echo $back_to_all_practices_permalink ?>" class="single-service-nav-link text-decoration-underline">
                     <?php echo '&lt;' ?> <?php echo $back_to_all_practices_text ?>
                 </a>
             </div>
@@ -51,8 +51,8 @@ $back_to_all_practices_text = 'Back to All Practice Areas'
     <nav class="single-service-footer-container container" aria-label="Service page navigation">
         <div class="single-service-footer-row row justify-content-between">
             <div class="single-service-footer-col col">
-                <a href="<?php echo $back_to_all_practice_permalink ?>" class="single-service-nav-link">
-                    Back to all practices
+                <a href="<?php echo $back_to_all_practices_permalink ?>" class="single-service-nav-link text-decoration-underline">
+                   < Back to all practices
                 </a>
             </div>
             <div class="single-service-footer-col col text-end">

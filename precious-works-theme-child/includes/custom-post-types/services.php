@@ -9,20 +9,20 @@
 
  function register_custom_post_type_services() {
     $labels = apply_filters( 'services_post_type_labels', array(
-        'name'               => 'Services',
-        'singular_name'      => 'Service',
-        'menu_name'          => 'Services',
-        'add_new'            => 'Add New Service',
-        'add_new_item'       => 'Add Service',
+        'name'               => 'Practice Areas',
+        'singular_name'      => 'Practice Area',
+        'menu_name'          => 'Practice Areas',
+        'add_new'            => 'Add New SPractice Area',
+        'add_new_item'       => 'Add Practice Area',
         'edit'               => 'Edit',
-        'edit_item'          => 'Edit Service',
-        'new_item'           => 'New Service',
-        'view'               => 'View Service',
-        'view_item'          => 'View Service',
-        'search_items'       => 'Search Service',
-        'not_found'          => 'No Service',
-        'not_found_in_trash' => 'No Service Found in Trash',
-        'parent'             => 'Parent Service',
+        'edit_item'          => 'Edit Practice Area',
+        'new_item'           => 'New Practice Area',
+        'view'               => 'View Practice Area',
+        'view_item'          => 'View Practice Area',
+        'search_items'       => 'Search Practice Area',
+        'not_found'          => 'No Practice Area',
+        'not_found_in_trash' => 'No Practice Area Found in Trash',
+        'parent'             => 'Parent Practice Area',
     ));
 
     $args = apply_filters( 'services_post_type_args', array(

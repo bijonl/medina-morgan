@@ -20,6 +20,11 @@
         'menu_title'    => 'Staff Settings',
         'parent_slug'   => 'edit.php?post_type=staff',
     ));
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Service Settings',
+        'menu_title'    => 'Service Settings',
+        'parent_slug'   => 'edit.php?post_type=services',
+    ));
     acf_add_options_page(array(
         'page_title'    => 'Code Snippets',
         'menu_title'    => 'Code Snippets',

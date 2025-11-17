@@ -23,7 +23,7 @@ if ( $next_id ) {
     <div aria-label="Next service" class="next-service-nav">
         <a href="<?php echo esc_url( get_permalink( $next_id ) ); ?>"
            aria-label="Go to next service: <?php echo esc_attr( $next_title ); ?>"
-           class="next-service-link">
+           class="text-decoration-underline next-service-link">
             Next Practice Area: <?php echo esc_html( $next_title ) ?> <?php echo '>' ?>
         </a>
     </div>
