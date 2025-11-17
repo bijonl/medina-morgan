@@ -9,20 +9,20 @@
 
  function register_custom_post_type_staff() {
     $labels = apply_filters( 'staff_post_type_labels', array(
-        'name'               => 'Staff',
-        'singular_name'      => 'Staff',
-        'menu_name'          => 'Staff',
-        'add_new'            => 'Add New Staff',
-        'add_new_item'       => 'Add Staff',
+        'name'               => 'Attorneys',
+        'singular_name'      => 'Attorney',
+        'menu_name'          => 'Attorneys',
+        'add_new'            => 'Add New Attorney',
+        'add_new_item'       => 'Add Attorney',
         'edit'               => 'Edit',
-        'edit_item'          => 'Edit Staff',
-        'new_item'           => 'New Staff',
-        'view'               => 'View Staff',
-        'view_item'          => 'View Staff',
-        'search_items'       => 'Search Staff',
-        'not_found'          => 'No Staff',
-        'not_found_in_trash' => 'No Staff Found in Trash',
-        'parent'             => 'Parent Staff',
+        'edit_item'          => 'Edit Attorney',
+        'new_item'           => 'New Attorney',
+        'view'               => 'View Attorney',
+        'view_item'          => 'View Attorney',
+        'search_items'       => 'Search Attorney',
+        'not_found'          => 'No Attorney',
+        'not_found_in_trash' => 'No Attorney Found in Trash',
+        'parent'             => 'Parent Attorney',
     ));
 
     $args = apply_filters( 'staff_post_type_args', array(
