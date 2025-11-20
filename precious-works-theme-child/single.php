@@ -18,6 +18,8 @@ include locate_template('components/variables/post-variables.php'); ?>
       </div>
     </div>
 </section>
+<?php include locate_template('components/blog/single-post-related-posts.php'); ?>
+<section
 
 
 

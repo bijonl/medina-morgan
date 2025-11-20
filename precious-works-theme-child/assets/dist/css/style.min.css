@@ -7371,11 +7371,14 @@ small, .small {
 .single-blog-post-section .single-blog-hero-container {
   padding-bottom: 50px;
 }
-.single-blog-post-section .single-blog-hero-container .single-blog-hero-row .single-blog-hero-col .post-meta-wrapper {
-  text-align: center;
+.single-blog-post-section .single-blog-hero-container .single-blog-hero-row .single-blog-hero-col {
   padding-bottom: 30px;
 }
+.single-blog-post-section .single-blog-hero-container .single-blog-hero-row .single-blog-hero-col .post-meta-wrapper {
+  text-align: center;
+}
 .single-blog-post-section .single-blog-hero-container .single-blog-hero-row .single-blog-hero-col .post-meta-wrapper p {
+  white-space: nowrap;
   font-size: 1.2rem;
 }
 .single-blog-post-section .single-blog-hero-container .single-blog-hero-row .single-blog-hero-col .post-meta-wrapper .author-wrapper {
