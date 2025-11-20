@@ -7315,9 +7315,9 @@ small, .small {
 }
 
 .blog-archive-hero-section {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-bottom: 40px;
+  color: white;
+  height: 40vh;
+  background-position: center;
 }
 .blog-archive-hero-section h1, .blog-archive-hero-section .h1 {
   padding-bottom: 15px;
@@ -7326,27 +7326,43 @@ small, .small {
   font-size: 1.2rem;
 }
 
-.blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .single-post-tile {
-  padding-bottom: 40px;
+.blog-archive-content-section {
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
-.blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .single-post-tile .single-post-image-wrapper {
-  padding-bottom: 20px;
+.blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .archive-single-post-tile {
+  border-bottom: solid 2px #360584;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
-.blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .single-post-tile .single-post-image-wrapper img {
+.blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .archive-single-post-tile:last-child {
+  margin-bottom: 0;
+}
+.blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .archive-single-post-tile .single-post-image-wrapper {
+  width: 40%;
+}
+.blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .archive-single-post-tile .single-post-image-wrapper img {
   width: 100%;
   height: auto;
 }
-.blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .single-post-tile .post-meta-wrapper a:hover {
+.blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .archive-single-post-tile .post-meta-wrapper {
+  width: 55%;
+  margin-left: auto;
+}
+.blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .archive-single-post-tile .post-meta-wrapper a:hover {
   text-decoration: none;
 }
-.blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .single-post-tile .post-meta-wrapper .term-wrapper {
+.blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .archive-single-post-tile .post-meta-wrapper .single-post-title-wrapper h3, .blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .archive-single-post-tile .post-meta-wrapper .single-post-title-wrapper .h3 {
+  padding-bottom: 30px;
+}
+.blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .archive-single-post-tile .post-meta-wrapper .term-wrapper {
   margin-top: 15px;
   margin-left: 0;
   margin-bottom: 0;
   list-style: none;
   display: flex;
 }
-.blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .single-post-tile .post-meta-wrapper .term-wrapper .single-term {
+.blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .archive-single-post-tile .post-meta-wrapper .term-wrapper .single-term {
   border: solid 1px black;
   padding: 8px;
   padding-left: 16px;
@@ -7357,10 +7373,37 @@ small, .small {
   margin-bottom: 0;
   line-height: 1;
 }
-.blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .single-post-tile .post-meta-wrapper .single-post-date-wrapper {
+.blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .archive-single-post-tile .post-meta-wrapper .single-post-date-wrapper {
   padding-top: 15px;
 }
-.blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .single-post-tile .post-meta-wrapper .single-post-date-wrapper p {
+.blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .archive-single-post-tile .post-meta-wrapper .single-post-date-wrapper p {
+  margin-bottom: 0;
+}
+
+.filter-blog-posts-form fieldset {
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.filter-blog-posts-form fieldset legend {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.filter-blog-posts-form fieldset hr {
+  color: white;
+  opacity: 1;
+}
+.filter-blog-posts-form fieldset .fieldset-desc {
+  font-size: 16px;
+  font-style: italic;
+}
+.filter-blog-posts-form fieldset .checkbox-list {
+  margin-bottom: 0;
+}
+.filter-blog-posts-form fieldset .checkbox-list input {
+  margin-right: 5px;
+}
+.filter-blog-posts-form fieldset .checkbox-list li:last-child {
   margin-bottom: 0;
 }
 

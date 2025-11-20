@@ -1,0 +1,104 @@
+.blog-archive-hero-section {
+    color: white; 
+    height: 40vh; 
+    background-position: center; 
+    h1 {
+        padding-bottom: 15px; 
+    }
+    p {
+        font-size: 1.2rem; 
+    }
+}
+
+.blog-archive-content-section {
+    padding-top: 90px;
+    padding-bottom: 90px; 
+    .blog-posts-container {
+        .blog-posts-row {
+            .blog-posts-col {
+                .archive-single-post-tile {
+                    border-bottom: solid 2px $color-secondary; 
+                    padding-bottom: 50px; 
+                    margin-bottom: 50px; 
+                    &:last-child {
+                        margin-bottom: 0; 
+                    }
+                    .single-post-image-wrapper {
+                        width: 40%; 
+                        img {
+                            width: 100%; 
+                            height: auto; 
+                        }
+                    }
+                    .post-meta-wrapper {
+                        width: 55%;
+                        margin-left: auto; 
+                        a {
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+                        .single-post-title-wrapper {
+                            h3 {
+                                padding-bottom: 30px; 
+                            }
+                        }
+                        .term-wrapper {
+                            margin-top: 15px; 
+                            margin-left: 0; 
+                            margin-bottom: 0; 
+                            list-style: none;
+                            display: flex; 
+                            .single-term {
+                                border: solid 1px black; 
+                                padding: 8px;
+                                padding-left: 16px; 
+                                padding-right: 16px; 
+                                font-weight: bold; 
+                                margin-right: 12px; 
+                                border-radius: 12px; 
+                                margin-bottom: 0; 
+                                line-height: 1; 
+                            }
+                        }
+                        .single-post-date-wrapper {
+                            padding-top: 15px; 
+                            p {
+                                margin-bottom: 0; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.filter-blog-posts-form {
+    fieldset {
+        padding: 20px; 
+        border-radius: 15px;
+        margin-bottom: 20px; 
+        legend {
+            font-size: 18px; 
+            margin-bottom: 0; 
+        }
+        hr {
+            color: white; 
+            opacity: 1; 
+        }
+        .fieldset-desc {
+            font-size: 16px;
+            font-style: italic; 
+        }
+        .checkbox-list  {
+            margin-bottom: 0; 
+            input {
+                margin-right: 5px; 
+            }
+            li:last-child {
+                margin-bottom: 0; 
+            }
+        }
+    }
+}
