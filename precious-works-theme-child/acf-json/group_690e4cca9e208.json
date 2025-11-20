@@ -1,10 +1,10 @@
 {
     "key": "group_690e4cca9e208",
-    "title": "Staff Fields",
+    "title": "Attorney Fields",
     "fields": [
         {
             "key": "field_690e4ccab59fd",
-            "label": "Staff Member Information",
+            "label": "Attorney Member Information",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -230,6 +230,27 @@
             "toolbar": "full",
             "media_upload": 1,
             "delay": 0
+        },
+        {
+            "key": "field_691f403d12f64",
+            "label": "Blog Bio",
+            "name": "blog_bio",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Use this text as the author bio for blog posts written by this attorney. Rewrite or adapt it as needed to fit an author bio format.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
         },
         {
             "key": "field_6918ced0284ad",
@@ -479,5 +500,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1763239258
+    "modified": 1763655822
 }

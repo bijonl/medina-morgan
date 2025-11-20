@@ -15,3 +15,4 @@ $education = get_field('education', $id);
 $bar_admissions = get_field('bar_admissions', $id);
 $practice_areas = get_field('practice_areas', $id);
 $insights = get_field('insights', $id);
+$blog_bio = get_field('blog_bio', $id);

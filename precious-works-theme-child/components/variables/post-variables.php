@@ -2,7 +2,7 @@
 $featured_image = get_post_thumbnail_id ($id, 'full', array('class' => '')); 
 $default_blog_image = get_field('default_blog_image', 'options');
 $title = get_the_title($id); 
-$publish_date = get_the_date($id); 
+$publish_date = get_the_date(); 
 $terms = get_the_terms($id, 'category'); 
 $author_display_name = get_field('author_display_name', $id);
 $excerpt = get_the_excerpt($id); 
@@ -15,4 +15,8 @@ if ($terms) {
 }
 
 $excerpt = get_the_excerpt($id); 
-$blog_intro = get_field('blog_intro', $id); ?>
+$blog_intro = get_field('blog_intro', $id); 
+$author = get_field('author'); 
+
+$practice_areas_crosslinks = get_field('practice_areas_crosslinks', $id);
+?>

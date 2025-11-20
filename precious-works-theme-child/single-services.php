@@ -1,15 +1,7 @@
 <?php echo get_header(); 
 $id = get_the_id(); 
 $back_to_all_practices_permalink = $top_level_practice_page = get_field('top_level_practice_page', 'options'); 
-$back_to_all_practices_text = 'Back to All Practice Areas'
-?>
-
-
-
-
-
-
-
+$back_to_all_practices_text = 'Back to All Practice Areas'; ?>
 
 <main class="single-service" id="service-content">
     <?php include locate_template('components/services/service-hero.php'); ?>
