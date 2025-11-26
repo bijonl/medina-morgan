@@ -3,25 +3,60 @@
     padding-bottom: $footer-padding; 
     background-color: $footer-background-color; 
     color: $footer-color; 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(lg) {
         padding-top: 40px; 
         padding-bottom: 40px; 
     }
     .site-footer-content-container {
-        .site-footer-content-row {
-            .footer-logo-col  {
-                @include media-breakpoint-down(sm) {
-                    padding-bottom: 25px; 
-                }
-            }
-            // @import './partials/social-list'; 
+      
+        .site-footer-logo-row {
+                padding-bottom: 40px; 
             .footer-logo-wrapper {
                 max-width: 300px; 
                 img {
                     border-radius: 0;
                 }
             }
-        
+
+        }
+
+        .site-footer-content-row {
+            .footer-menu-col {
+                @include media-breakpoint-down(sm) {
+                    padding-top: 40px;
+                }
+                .footer-navigation {
+                    li {
+                        a {
+                            color: inherit; 
+                            text-decoration: underline;
+                            text-transform: uppercase;
+                        }
+                    }
+                }  
+            }
+            .footer-copyright-col {
+                @include media-breakpoint-down(lg) {
+                    padding-bottom: 45px; 
+                }
+            }
+            // @import './partials/social-list'; 
+           .footer-contact-col {
+                .contact-info-wrapper {
+                    .contact-meta-wrapper {
+                        padding-bottom: 15px; 
+                        &:last-child {
+                            padding-bottom: 0; 
+                        }
+                        a {
+                            &:hover {
+                                color: inherit; 
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+           }
         }
     }
 }

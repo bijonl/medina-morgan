@@ -16,7 +16,7 @@ $default_blog_page = get_field('default_blog_page', 'options'); ?>
 <form class="filter-blog-posts-form" id="filter-blog-posts-form" method="get" action="<?php echo esc_url($default_blog_page); ?>" novalidate>
   <!-- Visually-hidden helper for screen readers -->
   <p id="form-instructions" class="sr-only">
-    Choose one or more communication preferences. Use space or enter to toggle each checkbox.
+    Choose one or more practice areas to filter blogs by.
   </p>
 
 
