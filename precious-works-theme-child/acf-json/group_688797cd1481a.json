@@ -71,6 +71,23 @@
             "mime_types": "",
             "allow_in_bindings": 0,
             "preview_size": "medium"
+        },
+        {
+            "key": "field_6926535077b0f",
+            "label": "Header Button",
+            "name": "header_button",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "allow_in_bindings": 0
         }
     ],
     "location": [
@@ -91,5 +108,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1762809938
+    "display_title": "",
+    "modified": 1764119387
 }

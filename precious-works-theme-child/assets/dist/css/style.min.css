@@ -7666,7 +7666,7 @@ small, .small {
   .site-header .site-header-container .site-header-row .header-menu-col nav {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
   }
   .site-header .site-header-container .site-header-row .header-menu-col nav ul {
     display: flex;
