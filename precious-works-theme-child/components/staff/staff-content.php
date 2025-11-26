@@ -1,3 +1,5 @@
+<?php $attorney_image = get_field('attorney_image', $id); ?>
+
 <section class="staff-bio-content-section">
     <div class="single-staff-content-container container">
         <div class="single-staff-content-row row">
@@ -9,6 +11,10 @@
                 <?php echo $biography ?>
             </div>
             <div class="single-staff-accordion-col ms-auto col-lg-5">
+                <div class="single-staff-image-wrapper pb-5">
+                    <?php echo wp_get_attachment_image($attorney_image, 'full', false, array('class' => 'w-100 h-auto')) ?>
+                </div>
+            
                 <div class="single-staff-accordion-wrapper">
                     <?php if(have_rows('education')) {
                         include locate_template('components/staff/education-content.php'); 

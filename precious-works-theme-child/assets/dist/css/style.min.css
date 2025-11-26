@@ -7938,10 +7938,11 @@ small, .small {
 }
 
 .reviews-section .reviews-container .reviews-row .reviews-col .masonry-review-card {
-  border: solid 2px black;
   padding: 15px;
-  border-radius: 12px;
   margin-bottom: 15px;
+}
+.reviews-section .reviews-container .reviews-row .reviews-col .masonry-review-card .star-wrapper {
+  padding-bottom: 20px;
 }
 .reviews-section .reviews-container .reviews-row .reviews-col .masonry-review-card .review-image-wrapper {
   width: 100px;
@@ -7954,12 +7955,12 @@ small, .small {
   height: auto;
 }
 .reviews-section .reviews-container .reviews-row .reviews-col .masonry-review-card .review-content blockquote {
+  margin-bottom: 15px !important;
   all: unset;
   display: block;
   font-family: "League Spartan", sans-serif;
   font-style: normal;
   margin: 0;
-  padding: 0;
   border: none;
   color: inherit;
 }
