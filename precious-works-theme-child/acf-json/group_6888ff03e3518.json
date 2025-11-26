@@ -402,6 +402,23 @@
             "append": ""
         },
         {
+            "key": "field_69265fac959a9",
+            "label": "Map Link",
+            "name": "map_link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "allow_in_bindings": 0
+        },
+        {
             "key": "field_6889227eb61cf",
             "label": "Copyright",
             "name": "",
@@ -481,5 +498,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1764116792
+    "modified": 1764122555
 }

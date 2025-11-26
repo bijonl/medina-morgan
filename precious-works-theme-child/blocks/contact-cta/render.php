@@ -1,5 +1,4 @@
-<?php 
-include(locate_template('blocks/partials/global-block-variables.php')); 
+<?php include(locate_template('blocks/partials/global-block-variables.php')); 
 
 $phone_number_title = get_field('phone_number_title');
 $phone_number = get_field('phone_number');
@@ -9,6 +8,15 @@ $email_address = get_field('email_address');
 $map_title = get_field('map_title');
 $address_text = get_field('address_text');
 $address_link = get_field('address_link');
+
+$default_phone_number = get_field('phone_number', 'options');
+$default_email_address = get_field('email_address', 'options');
+$default_address_line_one = get_field('address_line_one', 'options');
+$default_address_line_two = get_field('address_line_two', 'options');
+$default_city = get_field('city', 'options');
+$default_state = get_field('state', 'options');
+$default_zip_code = get_field('zip_code', 'options');
+$default_map_link = get_field('map_link', 'options');
 
 $has_content = !empty($phone_number_title) 
                 || !empty($phone_number) 
@@ -37,7 +45,7 @@ if(!$has_content) {
                         <?php echo pw_seo_heading($section_title, $section_title_tag, 'h2 mb-0') ?>
                     </div>
                 <?php } ?>
-                <?php if($section_subtitle) { ?>
+                <?php if(!empty($section_subtitle)) { ?>
                     <div class="cta-subtitle-wrapper">
                         <?php echo $section_subtitle ?>
                     </div>
@@ -46,7 +54,7 @@ if(!$has_content) {
             <?php } ?>
             <div class="contact-cta-col <?php echo $has_title_area ? 'col-lg-7' : 'col-lg-12' ?> ms-auto">
                 <div class="d-block d-sm-flex justify-content-between text-center">
-                   <?php if (!empty($phone_number)) { ?>
+                   
                         <div class="contact-item phone-contact" role="group" aria-label="Phone contact information">
                             <div class="icon" aria-hidden="true">
                                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -68,16 +76,15 @@ if(!$has_content) {
 
                             <div class="content">
                                 <p>
-                                    <a href="tel:<?php echo esc_attr($clean_number); ?>" 
+                                    <a href="tel:<?php echo esc_html($phone_number) ? esc_html($phone_number) : $default_phone_number; ?>" 
                                     aria-label="Call <?php echo esc_attr($site_name ?? 'our office'); ?>">
-                                        <?php echo esc_html($phone_number); ?>
+                                        <?php echo esc_html($phone_number) ? esc_html($phone_number) : $default_phone_number; ?>
                                     </a>
                                 </p>
                             </div>
                         </div>
-                    <?php }; ?>
 
-                <?php if (!empty($email_address)) { ?>
+       
                     <div class="contact-item email-contact text-center">
                         <div class="icon" aria-hidden="true">
                             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -101,13 +108,11 @@ if(!$has_content) {
                                 class="email-link" 
                                 aria-label="Send an email to <?php echo esc_attr($email_address); ?>"
                             >
-                                <?php echo esc_html($email_address); ?>
+                                <?php echo esc_html($email_address) ?  esc_html($email_address) : $default_email_address; ?>
                             </a>
                         </div>
                     </div>
 
-                <?php }; ?>
-                <?php if (!empty($address_text)) { ?>
                     <div class="contact-item map-contact text-center">
                         <div class="icon" aria-hidden="true">
                             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
@@ -135,15 +140,25 @@ if(!$has_content) {
                                 rel="noopener noreferrer" 
                                 aria-label="Open map location in a new tab"
                             >
-                                <?php echo esc_html($address_text); ?>
+                                <?php if($address_text) {
+                                    esc_html($address_text); 
+                                } else { ?>
+                                    <?php echo $address_line_one ?><br>
+                                    <?php echo $address_line_two ?><br>
+                                    <?php echo $city.', '.$state.' '.$zip_code ?>
+                                <?php } ?>
                             </a>
                         <?php } else { ?>
-                            <?php echo esc_html($address_text); ?>
+                            <?php if($address_text) {
+                                    esc_html($address_text); 
+                                } else { ?>
+                                    <?php echo $default_address_line_one.', '.$default_address_line_two ?>,<br>
+                                    <?php echo $default_city.', '.$default_state.' '.$default_zip_code ?>
+                            <?php } ?>
                         <?php }; ?>
                     </div>
                 </div>
 
-                <?php }; ?>
 
                 </div>
             </div>

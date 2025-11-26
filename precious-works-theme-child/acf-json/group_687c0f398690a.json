@@ -54,6 +54,11 @@
                 "param": "block",
                 "operator": "!=",
                 "value": "acf\/interior-hero"
+            },
+            {
+                "param": "block",
+                "operator": "!=",
+                "value": "acf\/form-block-two-col"
             }
         ]
     ],
@@ -66,5 +71,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1762542222
+    "display_title": "",
+    "modified": 1764123464
 }

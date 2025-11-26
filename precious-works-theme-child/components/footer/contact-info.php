@@ -1,35 +1,52 @@
-<?php $phone_number = get_field('phone_number', 'options');
-$email_address = get_field('email_address', 'options');
+<?php 
+$phone_number     = get_field('phone_number', 'options');
+$email_address    = get_field('email_address', 'options');
 $address_line_one = get_field('address_line_one', 'options');
 $address_line_two = get_field('address_line_two', 'options');
-$city = get_field('city', 'options');
-$state = get_field('state', 'options');
-$zip_code = get_field('zip_code', 'options'); ?>
+$city             = get_field('city', 'options');
+$state            = get_field('state', 'options');
+$zip_code         = get_field('zip_code', 'options'); 
+$map_link         = get_field('map_link', 'options'); 
+?>
 
-<div class="contact-info-wrapper">
+<div class="contact-info-wrapper" role="contentinfo" aria-label="Contact Information">
+
+    <!-- Phone -->
     <div class="phone-number-wrapper contact-meta-wrapper">
         <p class="mb-0">
             <a 
-                href="tel:<?php echo $phone_number ?>" 
-                class="color-inherit">
-                <?php echo $phone_number ?>
+                href="tel:<?php echo esc_attr($phone_number); ?>" 
+                class="color-inherit"
+                aria-label="Phone number: <?php echo esc_attr($phone_number); ?>">
+                <?php echo esc_html($phone_number); ?>
             </a>
         </p>
     </div>
+
+    <!-- Address -->
     <div class="address-wrapper contact-meta-wrapper">
         <p class="mb-0">
-            <?php echo $address_line_one ?><br>
-            <?php echo $address_line_two ?><br>
-            <?php echo $city.', '.$state.' '.$zip_code ?>
-        </p>
-    </div>
-        <div class="email-wrapper contact-meta-wrapper">
-          <p class="mb-0">
             <a 
-                href="mailto:<?php echo $email_address ?>" 
-                class="color-inherit">
-                <?php echo $email_address ?>
+                href="<?php echo esc_url($map_link['url']); ?>" 
+                class="color-inherit"
+                aria-label="View map for address: <?php echo esc_attr($address_line_one . ', ' . $city); ?>">
+                <?php echo esc_html($address_line_one); ?><br>
+                <?php echo esc_html($address_line_two); ?><br>
+                <?php echo esc_html($city . ', ' . $state . ' ' . $zip_code); ?>
             </a>
         </p>
     </div>
+
+    <!-- Email -->
+    <div class="email-wrapper contact-meta-wrapper">
+        <p class="mb-0">
+            <a 
+                href="mailto:<?php echo esc_attr($email_address); ?>" 
+                class="color-inherit"
+                aria-label="Email address: <?php echo esc_attr($email_address); ?>">
+                <?php echo esc_html($email_address); ?>
+            </a>
+        </p>
+    </div>
+
 </div>
