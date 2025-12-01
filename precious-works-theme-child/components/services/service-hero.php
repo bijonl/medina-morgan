@@ -29,3 +29,4 @@ $has_title_area = !empty($section_subtitle) || !empty($section_title); ?>
         </div>
     </div>
 </section>
+<?php include(locate_template('/components/services/service-nav.php')); ?>

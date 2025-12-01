@@ -1,3 +1,10 @@
+.accordion-section {
+    &.service-block {
+        padding-top: 70px; 
+        padding-bottom: 70px; 
+    }
+}
+
 
 .accordions-container {
     &.full-bleed-container {

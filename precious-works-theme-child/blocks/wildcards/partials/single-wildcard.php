@@ -1,4 +1,4 @@
-<div class="single-wildcard-wrapper h-sm-50">
+<div class="single-wildcard-wrapper <?php echo $link ? 'has-link': '' ?> h-sm-50">
     <?php if($link) { ?>
         <a href="<?php echo $link['url'] ?>" 
         target="<?php echo $link['target'] ? $link['target'] : '_self'?>"

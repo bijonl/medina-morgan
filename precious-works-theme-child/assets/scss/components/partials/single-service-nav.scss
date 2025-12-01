@@ -1,0 +1,17 @@
+.single-service-nav {
+    .service-nav-content-wrapper  {
+        .single-service-nav-link {
+            padding-top: 30px; 
+            padding-bottom: 30px; 
+            border-right: 2px solid #FFF;
+            &:last-child {
+                border-right: 0; 
+            }
+            a {
+                &:hover {
+                    color: inherit; 
+                }
+            }
+        }
+    }
+}

@@ -21,8 +21,8 @@
         'parent_slug'   => 'edit.php?post_type=staff',
     ));
     acf_add_options_sub_page(array(
-        'page_title'    => 'Service Settings',
-        'menu_title'    => 'Service Settings',
+        'page_title'    => 'Practice Area Settings',
+        'menu_title'    => 'Practice Area Settings',
         'parent_slug'   => 'edit.php?post_type=services',
     ));
     acf_add_options_page(array(

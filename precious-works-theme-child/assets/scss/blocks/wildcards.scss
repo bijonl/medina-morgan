@@ -45,7 +45,7 @@
                     //     padding-bottom: 40px; 
                     // }
                     transition: all 0.2s ease-in-out;
-                    &:hover {
+                    &.has-link:hover {
                         cursor: pointer;
                         .wildcard-image-wrapper {
                             img {

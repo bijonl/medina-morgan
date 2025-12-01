@@ -17,10 +17,10 @@ $header_button = get_field('header_button', 'options');
         </div>
       </div>
       <!-- Desktop Menu -->
-      <div class="header-menu-col col-sm-7 d-none d-lg-block">
+      <div class="header-menu-col col-sm-6 d-none d-lg-block">
         <?php include(locate_template('components/header-navigation/partials/header-menu.php')); ?>
       </div>
-      <div class="header-menu-button-col col-sm-1 d-none d-lg-block">
+      <div class="header-menu-button-col col-sm-2 d-none d-lg-block text-end">
           <a href="<?php echo $header_button['url'] ?>" 
           class="pw-solid-button"
           aria-label=<?php echo 'go to '. $header_button['url'] ?>

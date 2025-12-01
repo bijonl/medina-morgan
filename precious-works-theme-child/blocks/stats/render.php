@@ -12,12 +12,15 @@ if(!$has_content) {
 <section <?php echo pw_block_section_classes($block) ?>>
     <?php include(locate_template('blocks/partials/title-area.php')); ?> 
     <div class="stats-container container">
-        <div class="stats-row row row-cols-1 row-cols-lg-4" role="list">
+        <div class="stats-row row row-cols-1 row-cols-lg-3" role="list">
                 <?php if(have_rows('stats')) {
                     while(have_rows('stats')) {
                         the_row(); 
                         $top_line = get_sub_field('top_line'); 
                         $number = get_sub_field('number'); 
+                        $not_a_number = get_sub_field('not_a_number'); 
+                        $text = get_sub_field('text'); 
+                        $unit = get_sub_field('unit'); 
                         $content = get_sub_field('content'); 
                         $stat_id = 'stat-'.get_row_index(); 
                         ?>
@@ -36,4 +39,3 @@ if(!$has_content) {
         </div>   
     </div>
 </section>
-

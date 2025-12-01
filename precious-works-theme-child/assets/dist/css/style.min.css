@@ -7627,7 +7627,6 @@ small, .small {
   width: 200px;
 }
 .site-header.is-scrolling {
-  position: sticky;
   top: 0;
   z-index: 1020;
 }
@@ -7659,6 +7658,9 @@ small, .small {
 .site-header .site-header-container .site-header-row .header-menu-col nav a {
   color: #ffffff;
   text-decoration: none;
+}
+.site-header .site-header-container .site-header-row .header-menu-button-col .pw-solid-button {
+  min-width: 160px;
 }
 .site-header .site-header-container .site-header-row .header-menu-col {
   display: none;
@@ -7916,6 +7918,18 @@ small, .small {
   padding: 16px;
 }
 
+.single-service-nav .service-nav-content-wrapper .single-service-nav-link {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-right: 2px solid #FFF;
+}
+.single-service-nav .service-nav-content-wrapper .single-service-nav-link:last-child {
+  border-right: 0;
+}
+.single-service-nav .service-nav-content-wrapper .single-service-nav-link a:hover {
+  color: inherit;
+}
+
 @media (max-width: 575.98px) {
   .staff-member-card {
     padding-bottom: 30px;
@@ -7983,6 +7997,11 @@ small, .small {
 }
 .recent-posts-section .recent-posts-container .recent-posts-row .recent-posts-col .single-post-tile .single-post-title-wrapper {
   padding-bottom: 20px;
+}
+
+.accordion-section.service-block {
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .accordions-container.full-bleed-container .accordions-row .accordions-col {
@@ -8254,10 +8273,10 @@ small, .small {
 .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper {
   transition: all 0.2s ease-in-out;
 }
-.wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper:hover {
+.wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper.has-link:hover {
   cursor: pointer;
 }
-.wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper:hover .wildcard-image-wrapper img {
+.wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper.has-link:hover .wildcard-image-wrapper img {
   transition: all 0.2s ease-in-out;
   transform: scale(1.5);
 }

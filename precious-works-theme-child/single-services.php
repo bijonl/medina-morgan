@@ -22,6 +22,7 @@ $back_to_all_practices_text = 'Back to All Practice Areas'; ?>
         // Loop through rows.
         while ( have_rows('service_blocks') ) {
             the_row();
+            $section_title = ''; 
             $no_top_padding = get_sub_field('no_top_padding') ? 'pt-0': ''; 
             $no_bottom_padding = get_sub_field('no_bottom_padding') ? 'pb-0': ''; 
             $padding_class = $no_bottom_padding.' '.$no_top_padding; 
@@ -37,6 +38,8 @@ $back_to_all_practices_text = 'Back to All Practice Areas'; ?>
                 include locate_template('components/services/blocks/posts-block.php');
             } elseif( get_row_layout() == 'cta_block_staff_contact' ) {
                 include locate_template('components/services/blocks/cta_block_staff_contact.php');
+            } elseif( get_row_layout() == 'accordions' ) {
+                include locate_template('components/services/blocks/accordions.php');
             }
         } 
     } ?>
