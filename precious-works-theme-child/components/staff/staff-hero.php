@@ -13,7 +13,7 @@
                     <div class="position-wrapper">
                         <h3><?php echo $position_display_name ?></h3>
                     </div>
-                    <div class="contact-wrapper d-xl-flex justify-content-between align-items-center">
+                    <div class="contact-wrapper justify-content-between align-items-center">
                         <div class="contact-info-wrapper">
                             <p class="mb-0 phone">
                                 <a 
@@ -31,7 +31,7 @@
                                 </a>
                             </p>
                         </div>
-                        <div class="button-email-wrapper">
+                        <div class="button-email-wrapper mt-3">
                             <a class="pw-solid-button text-center">Email <?php echo $first_name ?></a>
                         </div>
 

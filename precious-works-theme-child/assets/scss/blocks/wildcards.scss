@@ -44,13 +44,13 @@
                     // @include media-breakpoint-down(lg) {
                     //     padding-bottom: 40px; 
                     // }
-                    transition: all 0.2s ease-in-out;
+                    transition: all 0.4s ease-in-out;
                     &.has-link:hover {
                         cursor: pointer;
                         .wildcard-image-wrapper {
                             img {
-                                transition: all 0.2s ease-in-out;
-                                transform: scale(1.5);
+                                transition: all 0.4s ease-in-out;
+                                transform: scale(1.2);
                             }
 
                         }

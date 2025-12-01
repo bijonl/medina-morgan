@@ -73,7 +73,7 @@ if (document.querySelector('.service-glide')) {
         perView: 1
       }
     },
-    autoplay: 4000,
+    autoplay: 5000,
     hoverpause: false,
   }).mount();
 }
