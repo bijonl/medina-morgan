@@ -54,10 +54,10 @@ $featured_image = get_the_post_thumbnail_url($id)
     <section class="blog-archive-content-section" id="blog-content-section">
         <div class="blog-posts-container container">
           <div class="blog-posts-row row">
-                <div class="blog-posts-filter-col col-sm-3">
+                <div class="blog-posts-filter-col col-lg-3">
                     <?php include locate_template('components/blog/archive-blog-filter.php'); ?>
                 </div>
-                <div class="blog-posts-col col-sm-8 ms-auto">
+                <div class="blog-posts-col col-lg-8 ms-auto">
                     <?php if($blogs->have_posts()) {
                         while($blogs->have_posts()) { 
                             $blogs->the_post(); 

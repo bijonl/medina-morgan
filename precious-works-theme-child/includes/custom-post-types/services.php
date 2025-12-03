@@ -38,7 +38,7 @@
         ),
         'hierarchical'        => true,
         'query_var'           => true,
-        'has_archive'         => true,
+        'has_archive'         => false,
         'exclude_from_search' => true,
         'menu_icon'           => 'dashicons-bank',
         'show_in_rest'        => true,

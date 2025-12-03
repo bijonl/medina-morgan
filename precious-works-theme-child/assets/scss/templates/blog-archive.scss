@@ -25,6 +25,10 @@
                     }
                     .single-post-image-wrapper {
                         width: 40%; 
+                        @include media-breakpoint-down(lg) {
+                            width: 100%; 
+                            margin-top: 30px; 
+                        }
                         img {
                             width: 100%; 
                             height: auto; 
@@ -33,6 +37,10 @@
                     .post-meta-wrapper {
                         width: 55%;
                         margin-left: auto; 
+                        @include media-breakpoint-down(lg) {
+                            width: 100%; 
+                            margin-top: 30px; 
+                        }
                         a {
                             &:hover {
                                 text-decoration: none;

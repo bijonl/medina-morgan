@@ -32,7 +32,7 @@
 
         <div class="single-post-author-button-wrapper">
             <a 
-                href="mailto:<?php echo esc_attr($$email_address); ?>" 
+                href="mailto:<?php echo esc_attr($email_address); ?>" 
                 class="pw-solid-button"
                 aria-label="Email <?php echo esc_attr($full_name); ?>"
             >

@@ -1,4 +1,10 @@
 .two-column-image-and-text-section {
+    .text-col {
+        @include media-breakpoint-down(sm) {
+            padding-top: 25px; 
+        }
+    }
+
     &.service-block {
         padding-top: 70px; 
         padding-bottom: 70px; 

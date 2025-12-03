@@ -7219,6 +7219,15 @@ img {
   color: black !important;
 }
 
+.photo-divider-container img {
+  border-radius: 0;
+}
+
+.image-gallery-col img {
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
 h1, .h1 {
   font-family: "Questrial", serif;
   font-size: 3.4375rem;
@@ -7345,6 +7354,12 @@ small, .small {
 .blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .archive-single-post-tile .single-post-image-wrapper {
   width: 40%;
 }
+@media (max-width: 991.98px) {
+  .blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .archive-single-post-tile .single-post-image-wrapper {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
 .blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .archive-single-post-tile .single-post-image-wrapper img {
   width: 100%;
   height: auto;
@@ -7352,6 +7367,12 @@ small, .small {
 .blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .archive-single-post-tile .post-meta-wrapper {
   width: 55%;
   margin-left: auto;
+}
+@media (max-width: 991.98px) {
+  .blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .archive-single-post-tile .post-meta-wrapper {
+    width: 100%;
+    margin-top: 30px;
+  }
 }
 .blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .archive-single-post-tile .post-meta-wrapper a:hover {
   text-decoration: none;
@@ -7852,6 +7873,11 @@ small, .small {
   background-size: cover;
   background-position: center;
 }
+@media (max-width: 575.98px) {
+  .single-post-tile .single-post-image-wrapper {
+    aspect-ratio: 3/2;
+  }
+}
 .single-post-tile .single-post-title-wrapper {
   background-color: #ffffff;
   color: #000000;
@@ -7922,6 +7948,12 @@ small, .small {
   padding-top: 30px;
   padding-bottom: 30px;
   border-right: 2px solid #FFF;
+}
+@media (max-width: 575.98px) {
+  .single-service-nav .service-nav-content-wrapper .single-service-nav-link {
+    border-right: 0;
+    border-bottom: 2px solid #FFF;
+  }
 }
 .single-service-nav .service-nav-content-wrapper .single-service-nav-link:last-child {
   border-right: 0;
@@ -8339,6 +8371,11 @@ small, .small {
   margin-bottom: 0;
 }
 
+@media (max-width: 575.98px) {
+  .two-column-image-and-text-section .text-col {
+    padding-top: 25px;
+  }
+}
 .two-column-image-and-text-section.service-block {
   padding-top: 70px;
   padding-bottom: 70px;

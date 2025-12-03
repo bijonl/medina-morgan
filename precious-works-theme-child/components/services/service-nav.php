@@ -1,6 +1,6 @@
 <?php if(have_rows('service_navigation_tabs')) { ?>
     <nav class="background-primary single-service-nav">
-        <ul class="service-nav-content-wrapper d-flex list-unstyled ms-0 justify-content-evenly">
+        <ul class="service-nav-content-wrapper d-sm-flex list-unstyled ms-0 justify-content-evenly">
     <?php while(have_rows('service_navigation_tabs')) {
         the_row(); ?>
      

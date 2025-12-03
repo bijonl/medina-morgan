@@ -34,3 +34,15 @@ img {
 .gform_wrapper.gravity-theme .ginput_counter.gfield_description {
     color: black!important;
 }
+
+.photo-divider-container {
+    img {
+        border-radius: 0;
+    }
+}
+
+.image-gallery-col img {
+    // border-radius: 30px;
+    padding-bottom: 0!important;  
+    padding-top: 0!important; 
+}

@@ -19,8 +19,11 @@
             <p><?php echo $position_display_name ?></p>
         </div>
         <div class="button-wrapper">
-            <a href="mailto:<?php echo $email_address ?>" 
-            class="pw-solid-button text-center <?php echo $section_background_color == 'primary' ? '' : 'pw-black-button' ?>">Email <?php echo $first_name ?></a>
+            <a href="<?php echo get_the_permalink($id) ?>" 
+                aria-label="view <?php echo $full_name ?>'s profile page"
+                class="pw-solid-button text-center <?php echo $section_background_color == 'primary' ? '' : 'pw-black-button' ?>">
+                View <?php echo $first_name ?>'s Profile
+            </a>
         </div>
     </div>  
 </article>

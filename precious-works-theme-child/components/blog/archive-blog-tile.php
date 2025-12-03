@@ -1,4 +1,4 @@
-    <div class="archive-single-post-tile d-flex align-items-center">
+    <div class="archive-single-post-tile d-lg-flex align-items-center">
         <div class="single-post-image-wrapper">
             <a href="<?php echo $permalink; ?>" class="single-post-link" aria-label="Read more about <?php echo esc_attr($title); ?>">
                     <?php echo $featured_image ? 
