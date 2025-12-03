@@ -8386,9 +8386,6 @@ small, .small {
 .two-column-image-and-text-section.service-block .text-col .title-wrapper {
   padding-bottom: 20px;
 }
-.two-column-image-and-text-section.service-block .image-col img {
-  max-height: 300px;
-}
 .two-column-image-and-text-section.service-block .full-bleed-container .full-bleed-row .text-col {
   margin-left: 5%;
   width: 50%;
