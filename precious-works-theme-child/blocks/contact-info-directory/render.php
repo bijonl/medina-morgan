@@ -1,5 +1,7 @@
 <?php 
 include(locate_template('blocks/partials/global-block-variables.php')); 
+$phone_number_table_header = get_field('phone_number_table_header');
+$phone_number_label_table_header = get_field('phone_number_label_table_header');
 
 if (have_rows('phone_numbers', 'options')) { ?>
     <section <?php echo pw_block_section_classes($block); ?>>
@@ -17,8 +19,8 @@ if (have_rows('phone_numbers', 'options')) { ?>
 
                         <thead>
                             <tr>
-                                <th class="border" scope="col">Label</th>
-                                <th class="border" scope="col">Phone Number</th>
+                                <th  scope="col"><?php echo $phone_number_label_table_header ? $phone_number_label_table_header : 'Label'?></th>
+                                <th  scope="col"><?php echo $phone_number_table_header ? $phone_number_table_header : 'Phone' ?></th>
                             </tr>
                         </thead>
 
@@ -32,8 +34,8 @@ if (have_rows('phone_numbers', 'options')) { ?>
                                 $tel_link = preg_replace('/[^0-9+]/', '', $phone_number);
                             ?>
                                 <tr>
-                                    <td class="border"><?php echo esc_html($phone_number_label); ?></td>
-                                    <td class="border">
+                                    <td ><?php echo esc_html($phone_number_label); ?></td>
+                                    <td >
                                         <a 
                                             class="color-inherit"
                                             href="tel:<?php echo esc_attr($tel_link); ?>" 

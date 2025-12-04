@@ -8263,6 +8263,7 @@ small, .small {
   border-color: white;
 }
 .contact-info-directory-section .cta-directory-container table td, .contact-info-directory-section .cta-directory-container table th {
+  border: solid 1px;
   padding: 10px;
   line-height: 1;
   border-color: black;
