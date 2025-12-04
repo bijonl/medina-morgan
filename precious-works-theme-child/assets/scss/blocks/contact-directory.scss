@@ -1,0 +1,28 @@
+.contact-info-directory-section  {
+    &.background-primary, &.background-secondary {
+        .cta-directory-container  {
+            table {
+                td, th {
+                    border-color: white; 
+                }
+            }
+
+        }
+    }
+
+    .cta-directory-container  {
+        table {
+            td, th {
+                padding: 10px; 
+                line-height: 1; 
+                border-color: black; 
+                a {
+                    &:hover {
+                        color: inherit; 
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -37,7 +37,7 @@
         'query_var'           => true,
         'has_archive'         => false,
         'exclude_from_search' => true,
-        'menu_icon'           => 'dashicons-star-filled',
+        'menu_icon'           => 'dashicons-businessperson',
         'show_in_rest'        => true,
         'supports'            => array( 'title'),
         'labels'              => $labels,

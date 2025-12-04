@@ -14,6 +14,11 @@
         'icon'  => 'phone',
         'description' => "A section designed to grab attention and encourage visitors to take a specific action—like clicking a button, signing up, or getting in touch. Use it to guide people toward what matters most on your site."
     ],
+    'contact-info-directory' => [
+        'label' => 'Contact Info Directory',
+        'icon'  => 'phone',
+        'description' => "This outputs all the phone numbers of the firm. This can be changes in the Contact Information tab if needed."
+    ],
     'form-block' => [
         'label' => 'Form Block',
         'icon'  => 'feedback',

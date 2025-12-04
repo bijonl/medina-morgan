@@ -29,5 +29,12 @@
         'page_title'    => 'Code Snippets',
         'menu_title'    => 'Code Snippets',
     ));
+    acf_add_options_page(array(
+        'page_title'    => 'Contact Information',
+        'menu_title'    => 'Contact Information',
+        'menu_slug'  => 'contact-info',
+        'icon_url' => 'dashicons-phone',
+
+    ));
   }
 }); ?>

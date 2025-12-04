@@ -8259,6 +8259,19 @@ small, .small {
   z-index: 2;
 }
 
+.contact-info-directory-section.background-primary .cta-directory-container table td, .contact-info-directory-section.background-primary .cta-directory-container table th, .contact-info-directory-section.background-secondary .cta-directory-container table td, .service-slider-cards-block-section .contact-info-directory-section.section-title-wrapper .cta-directory-container table td, .contact-info-directory-section.background-secondary .cta-directory-container table th, .service-slider-cards-block-section .contact-info-directory-section.section-title-wrapper .cta-directory-container table th {
+  border-color: white;
+}
+.contact-info-directory-section .cta-directory-container table td, .contact-info-directory-section .cta-directory-container table th {
+  padding: 10px;
+  line-height: 1;
+  border-color: black;
+}
+.contact-info-directory-section .cta-directory-container table td a:hover, .contact-info-directory-section .cta-directory-container table th a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
 @media (max-width: 991.98px) {
   .call-to-action---contact-info-section .cta-container .cta-row .cta-title-wrapper {
     padding-bottom: 30px;
