@@ -12,6 +12,14 @@
                 padding-bottom: 30px; 
                 .post-meta-wrapper {
                     text-align: center;
+                    .title-wrapper {
+                        h1 {
+                            @include media-breakpoint-down(xl) {
+                                font-size: 40px
+                            }
+                        }
+                       
+                    }
                     p {
                         white-space: nowrap;
                         font-size: 1.2rem; 

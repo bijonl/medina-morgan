@@ -7,11 +7,11 @@ include locate_template('components/variables/post-variables.php'); ?>
 <section class="single-blog-post-section" id="blog-post-content">
     <div class="single-blog-post-container container">
       <div class="single-blog-post-row row">
-        <div class="single-blog-post-author-col col-sm-3 me-auto">
+        <div class="single-blog-post-author-col col-lg-3 me-auto order-last order-lg-first">
           <?php include locate_template('components/blog/single-post-author.php'); ?>
           <?php include locate_template('components/blog/single-post-footer.php'); ?>
         </div>
-        <div class="single-blog-post-col col-sm-8">
+        <div class="single-blog-post-col col-lg-8 order-first order-lg-last">
             <?php include locate_template('components/blog/single-post-hero.php'); ?>
             <?php include locate_template('components/blog/single-post-content.php'); ?>
         </div>
@@ -19,9 +19,5 @@ include locate_template('components/variables/post-variables.php'); ?>
     </div>
 </section>
 <?php include locate_template('components/blog/single-post-related-posts.php'); ?>
-<section
-
-
-
 
 <?php echo get_footer(); ?>

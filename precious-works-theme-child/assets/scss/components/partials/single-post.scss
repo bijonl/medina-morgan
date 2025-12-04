@@ -5,19 +5,29 @@
 .single-post-tile {
     border: solid 1px $color-tertiary;
     .single-post-image-wrapper {
+        width: 50%; 
         background-size: cover; 
         background-position: center;
         @include media-breakpoint-down(sm) {
             aspect-ratio: 3/2;
+            width: 100%; 
         }
     }
     .single-post-title-wrapper {
         background-color: $color-text-alt; 
+        width: 50%; 
         color: $color-primary; 
         aspect-ratio: 1.2/1;
         padding: 20px; 
+        @include media-breakpoint-down(sm) {
+            width: 100%; 
+        }
         .post-title {
-            padding-bottom: 30px; 
+            font-size: 22px; 
+            padding-bottom: 10px; 
+        }
+        .post-excerpt {
+            font-size: 16px;  
         }
         p {
             margin: 0;

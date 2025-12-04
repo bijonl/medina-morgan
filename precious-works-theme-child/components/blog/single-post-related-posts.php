@@ -7,12 +7,12 @@ $default_blog_page = get_field('default_blog_page', 'options');
 $has_title_area = $section_title || $section_subtitle; 
 $block = array('id' => 'related-insight'); 
 ?>
-
+<?php if($recent_posts) { ?>
 <section class="recent-posts-section service-block background-secondary <?php echo $padding_class ?>" id="<?php echo $anchor_link ?>">
     <?php if($has_title_area) { 
         include(locate_template('blocks/partials/title-area.php'));
     } ?>
-    <?php if($recent_posts) { ?>
+ 
         <div class="recent-posts-container container">
             <div class="recent-posts-row row">
                 <?php foreach($recent_posts as $id) { ?>
@@ -42,5 +42,6 @@ $block = array('id' => 'related-insight');
             <?php } ?>
          </div>
         <?php wp_reset_postdata(); ?>
-    <?php } ?>
+
 </section>
+<?php } ?>
