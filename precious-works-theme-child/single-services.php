@@ -23,6 +23,7 @@ $back_to_all_practices_text = 'Back to All Practice Areas'; ?>
         while ( have_rows('service_blocks') ) {
             the_row();
             $section_title = ''; 
+            $section_subtitle = ''; 
             $no_top_padding = get_sub_field('no_top_padding') ? 'pt-0': ''; 
             $no_bottom_padding = get_sub_field('no_bottom_padding') ? 'pb-0': ''; 
             $padding_class = $no_bottom_padding.' '.$no_top_padding; 

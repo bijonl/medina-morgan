@@ -16,22 +16,28 @@
                     $alt = get_post_meta($image, '_wp_attachment_image_alt', true);
                     $alt = $alt ?: esc_attr($title); // Fallback to title
                     echo wp_get_attachment_image($image, 'full', false, ['alt' => $alt]);
-                } elseif (!empty($heading)) { ?>
-                    <h2 class="mb-0"><?php echo $heading ?></h2>
-                <?php } ?>
+                } ?>
             </div>
-
-
     <?php } ?>
- 
+    <?php if(!empty($heading)) { ?>
+        <div class="wildcard-heading-wrapper">
+            <h2 class="h3 mb-0"><?php echo esc_html($heading); ?></h2>
+        </div>
+    <?php } ?>
+    
+    <?php if(!empty($title)) { ?>
     <div class="wildcard-title-wrapper">
         <h4 class="h3 mb-0"><?php echo esc_html($title); ?></h4>
     </div>
+    <?php } ?>
+
+    <?php if(!empty($content)) { ?>
     <div class="content-area-wrapper">
         <div class="wildcard-content-wrapper">
             <p class="mb-0"><?php echo wp_kses_post($content); ?></p>
         </div>
     </div>
+    <?php } ?>
     <?php if($link) { ?>
         </a>
     <?php } ?>
