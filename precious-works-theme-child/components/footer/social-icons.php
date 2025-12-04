@@ -1,5 +1,5 @@
 <div class="footer-social-wrapper" role="navigation" aria-label="Social Media Links">
-    <ul class="social-list">
+    <ul class="social-list list-unstyled ms-0 d-flex justify-content-between">
         <?php while(have_rows('social_media_footer', 'options')) {
             the_row(); 
             $image_type = get_sub_field('image_type'); 

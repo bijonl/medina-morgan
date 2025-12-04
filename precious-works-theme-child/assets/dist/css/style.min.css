@@ -7228,6 +7228,10 @@ img {
   padding-top: 0 !important;
 }
 
+.background-light-gray {
+  background-color: lightgray;
+}
+
 h1, .h1 {
   font-family: "Questrial", serif;
   font-size: 3.4375rem;
@@ -7851,6 +7855,15 @@ small, .small {
 .site-footer .site-footer-content-container .site-footer-content-row .footer-contact-col .contact-info-wrapper .contact-meta-wrapper a:hover {
   color: inherit;
   text-decoration: underline;
+}
+.site-footer .social-list {
+  font-size: 26px;
+}
+.site-footer .social-list a {
+  color: white;
+}
+.site-footer .social-list a:hover {
+  color: #360584;
 }
 
 .title-area-container .title-area-row .title-area-col .title-area-content-wrapper {
@@ -8591,6 +8604,30 @@ small, .small {
   font-size: 55px;
 }
 
+@property --from {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+.counter {
+  transition: --from 1s;
+  counter-reset: int var(--from);
+  animation: counter var(--time, 1000) forwards ease-in-out;
+}
+
+.counter::after {
+  content: counter(int);
+}
+
+.counter.finished::after {
+  content: "";
+}
+
+@keyframes counter {
+  to {
+    --from: var(--to, 100);
+  }
+}
 .glide {
   position: relative;
   width: 100%;

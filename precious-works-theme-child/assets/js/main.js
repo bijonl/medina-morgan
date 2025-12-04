@@ -102,3 +102,20 @@ setEqualHeight('single-post-tile');
 // Optional: Update on window resize
 window.addEventListener('resize', () => setEqualHeight('single-post-tile'));
 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".counter");
+
+  counters.forEach(counter => {
+    counter.addEventListener("animationend", () => {
+      // Get final value from CSS variable
+      const finalValue = getComputedStyle(counter).getPropertyValue("--to").trim();
+
+      // Format with commas
+      const formatted = Number(finalValue).toLocaleString();
+
+      counter.classList.add("finished");
+      counter.textContent += formatted;
+    });
+  });
+});

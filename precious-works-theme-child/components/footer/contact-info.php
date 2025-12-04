@@ -49,4 +49,10 @@ $map_link         = get_field('map_link', 'options');
         </p>
     </div>
 
+    <?php if (have_rows('social_media_footer', 'options')) { ?>
+        <nav class="footer-social-col col" role="navigation" aria-label="Social Media Links">
+            <?php include locate_template('components/footer/social-icons.php'); ?>
+        </nav>
+    <?php }; ?>
+
 </div>

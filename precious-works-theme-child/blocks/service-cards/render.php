@@ -21,7 +21,7 @@ $count = 0;
                 <?php foreach ($services as $id) { 
                     $count++; 
                     ?>
-                        <div class="service-col col glide__slide text-center <?php echo $count % 2 !== 0 ? 'background-tertiary' : '' ?>">
+                        <div class="service-col mx-0 col glide__slide text-center <?php echo $count % 2 !== 0 ? 'background-tertiary' : 'background-light-gray' ?>">
                             <?php include(locate_template('components/variables/service-variables.php')); ?>
                             <article class="service-member-card">
                                 <div class="service-image-wrapper">
