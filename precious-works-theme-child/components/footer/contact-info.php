@@ -1,5 +1,6 @@
 <?php 
 $phone_number     = get_field('phone_number', 'options');
+$toll_free_phone_number = get_field('toll_free_phone_number', 'options');
 $email_address    = get_field('email_address', 'options');
 $address_line_one = get_field('address_line_one', 'options');
 $address_line_two = get_field('address_line_two', 'options');
@@ -7,7 +8,10 @@ $city             = get_field('city', 'options');
 $state            = get_field('state', 'options');
 $zip_code         = get_field('zip_code', 'options'); 
 $map_link         = get_field('map_link', 'options'); 
+$phone_number_label = get_field('phone_number_label', 'options');
+$toll_free_phone_number_label = get_field('toll_free_phone_number_label', 'options');
 ?>
+
 
 <div class="contact-info-wrapper" role="contentinfo" aria-label="Contact Information">
 
@@ -18,7 +22,15 @@ $map_link         = get_field('map_link', 'options');
                 href="tel:<?php echo esc_attr($phone_number); ?>" 
                 class="color-inherit"
                 aria-label="Phone number: <?php echo esc_attr($phone_number); ?>">
-                <?php echo esc_html($phone_number); ?>
+                <?php echo $phone_number_label.' '.esc_html($phone_number); ?>
+            </a>
+        </p>
+        <p class="mb-0">
+            <a 
+                href="tel:<?php echo esc_attr($toll_free_phone_number); ?>" 
+                class="color-inherit"
+                aria-label="Toll Free Phone number: <?php echo esc_attr($toll_free_phone_number); ?>">
+                <?php echo $toll_free_phone_number_label.' '.esc_html($toll_free_phone_number); ?>
             </a>
         </p>
     </div>

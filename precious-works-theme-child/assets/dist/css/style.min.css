@@ -7856,6 +7856,9 @@ small, .small {
   color: inherit;
   text-decoration: underline;
 }
+.site-footer .site-footer-content-container .site-footer-content-row .footer-contact-col .contact-info-wrapper .contact-meta-wrapper.phone-number-wrapper p {
+  white-space: nowrap;
+}
 .site-footer .social-list {
   font-size: 26px;
 }

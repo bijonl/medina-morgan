@@ -54,6 +54,11 @@
                                 text-decoration: underline;
                             }
                         }
+                        &.phone-number-wrapper {
+                            p {
+                                white-space: nowrap;
+                            }
+                        }
                     }
                 }
            }
