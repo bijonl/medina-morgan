@@ -25,14 +25,40 @@ $count = 0;
                             <?php include(locate_template('components/variables/service-variables.php')); ?>
                             <article class="service-member-card">
                                 <div class="service-image-wrapper">
-                                    <?php echo wp_get_attachment_image($service_image_id, 'service-card', false, array('class' => 'mx-auto h-auto')) ?>
+                                     <a 
+                                        href="<?php echo esc_url(get_the_permalink($id)); ?>" 
+                                        target="<?php echo '_self'; ?>" 
+                                        aria-label="see <?php echo esc_attr($service_display_name); ?> page"
+                                    >
+                                        <?php echo wp_get_attachment_image($service_image_id, 'service-card', false, array('class' => 'mx-auto h-auto')) ?>
+                                    </a>
                                 </div>
                                 <div class="service-meta-wrapper mx-auto d-flex justify-content-between align-items-center">
                                     <div class="service-text-wrapper">
-                                        <h3 class="h2 service-title"><?php echo $service_display_name ?></h3>
+                                        <h3 class="h2 service-title">
+                                             <a 
+                                                href="<?php echo esc_url(get_the_permalink($id)); ?>" 
+                                                target="<?php echo '_self'; ?>" 
+                                                class="color-inherit"
+                                                aria-label="see <?php echo esc_attr($service_display_name); ?> page"
+                                            >
+                                                <?php echo $service_display_name ?>
+                                            </a>
+                                        
+                                        </h3>
                                         <p><?php echo $quick_service_summary ?></p>
                                     </div>
                                 </div>  
+                                 <div class="button-area-wrapper">
+                                    <a 
+                                        href="<?php echo esc_url(get_the_permalink($id)); ?>" 
+                                        target="<?php echo '_self'; ?>" 
+                                        class="pw-solid-button"
+                                        aria-label="see <?php echo esc_attr($service_display_name); ?> page"
+                                    >
+                                        <?php echo 'View Practice' ?>
+                                    </a>
+                                </div>
                             </article>
                         </div>
                 <?php }; ?>

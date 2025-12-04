@@ -6,9 +6,5 @@
         <div class="staff-text-wrapper">
             <h3 class="h2"><?php echo $service_display_name ?></h3>
             <p><?php echo $quick_service_summary ?></p>
-        </div>
-        <div class="button-wrapper">
-            <a href="mailto:<?php echo $email_address ?>" class="pw-solid-button text-center">Learn More</a>
-        </div>
-    </div>  
+    </div>
 </article>
