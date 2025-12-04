@@ -8595,6 +8595,14 @@ small, .small {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.stats-section .stats-container .stats-row .stats-col .single-stat-wrapper .top-line {
+  font-size: 24px;
+  font-weight: 600;
+}
+.stats-section .stats-container .stats-row .stats-col .single-stat-wrapper .stat-content-wrapper {
+  font-size: 24px;
+  font-weight: 600;
+}
 .stats-section .stats-container .stats-row .stats-col .single-stat-wrapper .stat-title-wrapper {
   color: #360584;
   padding-top: 30px;
