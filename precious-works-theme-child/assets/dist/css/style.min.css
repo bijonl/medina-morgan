@@ -8153,7 +8153,7 @@ small, .small {
   color: white;
 }
 .homepage-hero-section:has(.half-sized), .interior-hero-section:has(.half-sized) {
-  height: 50vh;
+  height: 25vh;
 }
 .homepage-hero-section:has(.half-sized) .overlay.image-overlay, .interior-hero-section:has(.half-sized) .overlay.image-overlay {
   opacity: 0.3;

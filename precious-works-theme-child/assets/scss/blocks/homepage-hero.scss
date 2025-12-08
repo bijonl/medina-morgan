@@ -10,7 +10,7 @@
     background-position: center;
     color: $homepage-hero-color; 
     &:has(.half-sized) {
-        height: 50vh;
+        height: 25vh;
         .overlay.image-overlay {
             opacity: 0.3;
         }
