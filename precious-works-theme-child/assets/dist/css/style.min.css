@@ -8154,6 +8154,7 @@ small, .small {
 }
 .homepage-hero-section:has(.half-sized), .interior-hero-section:has(.half-sized) {
   height: 25vh;
+  min-height: auto !important;
 }
 .homepage-hero-section:has(.half-sized) .overlay.image-overlay, .interior-hero-section:has(.half-sized) .overlay.image-overlay {
   opacity: 0.3;
@@ -8161,7 +8162,10 @@ small, .small {
 .homepage-hero-section:has(.half-sized) .homepage-hero-container, .interior-hero-section:has(.half-sized) .homepage-hero-container {
   z-index: 2;
   position: relative;
-  min-height: 100vh;
+  min-height: auto;
+}
+.homepage-hero-section:has(.half-sized) .homepage-hero-container .homepage-hero-row, .interior-hero-section:has(.half-sized) .homepage-hero-container .homepage-hero-row {
+  min-height: auto;
 }
 .homepage-hero-section:has(.half-sized) .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper.interior-hero, .interior-hero-section:has(.half-sized) .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper.interior-hero {
   padding: 0;

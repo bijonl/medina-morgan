@@ -11,14 +11,16 @@
     color: $homepage-hero-color; 
     &:has(.half-sized) {
         height: 25vh;
+        min-height: auto!important; 
         .overlay.image-overlay {
             opacity: 0.3;
         }
         .homepage-hero-container {
             z-index: 2;
             position: relative;
-            min-height: 100vh; 
+            min-height: auto; 
             .homepage-hero-row {
+                min-height: auto; 
                 .homepage-hero-col {
                     .homepage-hero-content-wrapper.interior-hero {
                         padding: 0; 
