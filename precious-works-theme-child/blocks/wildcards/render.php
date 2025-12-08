@@ -27,7 +27,7 @@ if(!$has_content) {
                         $link = get_sub_field('link'); 
                         $wildcard_id = 'wildcard-'.get_row_index(); 
                         ?>
-                        <div class="wildcards-col col-lg-3 mx-auto text-<?php echo $wildcard_alignment ?> u-focus-style" role="listitem">
+                        <div class="wildcards-col col-lg-3 text-<?php echo $wildcard_alignment ?> u-focus-style" role="listitem">
                             <?php include(locate_template('blocks/wildcards/partials/single-wildcard.php'));  ?>
                         </div>     
                 <?php   

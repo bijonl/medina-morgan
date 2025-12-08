@@ -8351,11 +8351,15 @@ small, .small {
 .wildcards-section.service-block .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper .wildcard-content-wrapper {
   padding-bottom: 60px;
 }
-.wildcards-section .wildcards-container .wildcards-row.row-cols-lg-4 .wildcards-col:nth-last-child(-n+4) {
-  margin-bottom: 0;
+@media (min-width: 992px) {
+  .wildcards-section .wildcards-container .wildcards-row.row-cols-lg-4 .wildcards-col:nth-last-child(-n+4) {
+    margin-bottom: 0;
+  }
 }
-.wildcards-section .wildcards-container .wildcards-row.row-cols-lg-3 .wildcards-col:nth-last-child(-n+3) {
-  margin-bottom: 0;
+@media (min-width: 576px) {
+  .wildcards-section .wildcards-container .wildcards-row.row-cols-lg-3 .wildcards-col:nth-last-child(-n+3) {
+    margin-bottom: 0;
+  }
 }
 .wildcards-section .wildcards-container .wildcards-row .wildcards-col {
   margin-bottom: 100px;
