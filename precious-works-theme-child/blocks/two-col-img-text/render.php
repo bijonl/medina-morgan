@@ -10,7 +10,8 @@ $is_full = $image_style === 'full';
 $title_placement = get_field('title_placement') ? get_field('title_placement') : 'above';
 $title_above = $title_placement === 'above'; 
 $title_column = $title_placement === 'column'; 
-?>
+$content_alignment = 'align-items-center'; 
+$content_alignment = get_field('content_alignment') ? get_field('content_alignment') : 'align-items-center'; ?>
 
 <?php $has_content = !empty($image) || !empty($content) || $has_button_area || $has_title_area;
 
@@ -28,7 +29,7 @@ $display_title = 'h1';  ?>
         include(locate_template('blocks/partials/title-area.php')); 
     } ?>
     <div class="two-col-container <?php echo !$is_full ? 'container': 'full-bleed-container' ?>">
-        <div class="two-col-row <?php echo !$is_full ? 'row align-items-center': 'full-bleed-row d-lg-flex align-items-center' ?> ">
+        <div class="two-col-row <?php echo !$is_full ? 'row '.$content_alignment : 'full-bleed-row d-lg-flex '.$content_alignment ?> ">
             <div class="two-col-col image-col <?php echo $image_col_width ?> <?php echo $column_order ?>">
                 <?php echo wp_get_attachment_image($image, 'full', false, array('class' => 'w-100 h-auto')) ?>
             </div>

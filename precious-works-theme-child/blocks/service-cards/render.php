@@ -7,7 +7,7 @@ if(!$has_content) {
     include __DIR__ . '/demo.php';
     return; 
 } 
-$count = 0; 
+$count = 0;  
 ?>
 
 <section <?php echo pw_block_section_classes($block) ?>>
@@ -20,8 +20,10 @@ $count = 0;
             <div class="service-row row glide__slides">
                 <?php foreach ($services as $id) { 
                     $count++; 
+                    $first_slide = $count === 1; 
+                    $last_slide = $count === count($services); 
                     ?>
-                        <div class="service-col mx-0 col glide__slide text-center <?php echo $count % 2 !== 0 ? 'background-tertiary' : 'background-light-gray' ?>">
+                        <div class="service-col mx-0 col glide__slide <?php echo $first_slide ? 'first' : '' ?> <?php echo $last_slide ? 'last' : '' ?> text-center <?php echo $count % 2 !== 0 ? 'background-tertiary' : 'background-light-gray' ?>">
                             <?php include(locate_template('components/variables/service-variables.php')); ?>
                             <article class="service-member-card">
                                 <div class="service-image-wrapper">

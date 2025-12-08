@@ -8141,8 +8141,11 @@ small, .small {
   padding: 16px;
 }
 
+.homepage-hero-section {
+  min-height: 100vh;
+}
+
 .homepage-hero-section, .interior-hero-section {
-  height: 100vh;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8158,6 +8161,7 @@ small, .small {
 .homepage-hero-section:has(.half-sized) .homepage-hero-container, .interior-hero-section:has(.half-sized) .homepage-hero-container {
   z-index: 2;
   position: relative;
+  min-height: 100vh;
 }
 .homepage-hero-section:has(.half-sized) .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper.interior-hero, .interior-hero-section:has(.half-sized) .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper.interior-hero {
   padding: 0;
@@ -8184,6 +8188,9 @@ small, .small {
 .homepage-hero-section .homepage-hero-container, .interior-hero-section .homepage-hero-container {
   z-index: 2;
   position: relative;
+}
+.homepage-hero-section .homepage-hero-container .homepage-hero-row, .interior-hero-section .homepage-hero-container .homepage-hero-row {
+  min-height: 100vh;
 }
 .homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper, .interior-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper {
   padding-top: 30px;
@@ -8243,9 +8250,10 @@ small, .small {
 .hero-video {
   position: absolute;
   top: 0;
+  height: 100%;
   left: 0;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   object-fit: cover;
   z-index: 0;
 }
@@ -8322,6 +8330,10 @@ small, .small {
 .image-gallery-col img {
   padding-top: 12px;
   padding-bottom: 12px;
+}
+
+.interior-hero-section.block-section {
+  min-height: 100vh;
 }
 
 .wildcards-section {
@@ -8515,6 +8527,18 @@ small, .small {
 .service-slider-cards-block-section .service-col {
   padding-top: 25px;
   aspect-ratio: 8/10;
+}
+.service-slider-cards-block-section .service-col.first {
+  background-color: lightgray;
+}
+.service-slider-cards-block-section .service-col.first.glide__slide--active {
+  background-color: #EDEDED;
+}
+.service-slider-cards-block-section .service-col.last.glide__slide--active {
+  background-color: lightgray;
+}
+.service-slider-cards-block-section .service-col.last.glide__slide--active + div {
+  background-color: #EDEDED;
 }
 .service-slider-cards-block-section .service-col .service-member-card .service-image-wrapper {
   padding-bottom: 15px;

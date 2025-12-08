@@ -15,6 +15,23 @@
     .service-col  {
         padding-top: 25px; 
         aspect-ratio: 8/10;
+        &.first {
+            background-color: lightgray; 
+
+            &.glide__slide--active {
+                background-color: #EDEDED; 
+            }
+        }
+        
+        &.last {
+             &.glide__slide--active {
+                background-color: lightgray; 
+                + div {
+                    background-color: #EDEDED; 
+                }
+            }
+        }
+
         .service-member-card {
             .service-image-wrapper {
                 padding-bottom: 15px; 

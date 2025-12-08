@@ -1,5 +1,9 @@
+.homepage-hero-section {
+    min-height: 100vh; 
+}
+
 .homepage-hero-section, .interior-hero-section {
-    height: $homepage-hero-height;
+    // height: $homepage-hero-height;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,6 +17,7 @@
         .homepage-hero-container {
             z-index: 2;
             position: relative;
+            min-height: 100vh; 
             .homepage-hero-row {
                 .homepage-hero-col {
                     .homepage-hero-content-wrapper.interior-hero {
@@ -47,6 +52,7 @@
         z-index: 2;
         position: relative;
         .homepage-hero-row {
+             min-height: 100vh; 
             .homepage-hero-col {
                 .homepage-hero-content-wrapper {
                     padding-top: 30px; 
@@ -115,9 +121,10 @@
 .hero-video {
   position: absolute;
   top: 0;
+  height: 100%; 
   left: 0;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   object-fit: cover;
   z-index: 0;
 }

@@ -7,7 +7,7 @@
             <?php echo wp_get_attachment_image($staff_member_image_id, 'full', false, array('class' => 'w-100 h-auto')) ?>
         </a>
     </div>
-    <div class="staff-meta-wrapper d-xl-flex justify-content-between align-items-center">
+    <div class="staff-meta-wrapper d-xl-block justify-content-between align-items-center">
         <div class="staff-text-wrapper">
             <h3 class="staff-name-title">
                 <a href="<?php echo get_the_permalink($id) ?>"
@@ -18,7 +18,7 @@
                 </a></h3>
             <p><?php echo $position_display_name ?></p>
         </div>
-        <div class="button-wrapper">
+        <div class="button-wrapper mt-3">
             <a href="<?php echo get_the_permalink($id) ?>" 
                 aria-label="view <?php echo $full_name ?>'s profile page"
                 class="pw-solid-button text-center <?php echo $section_background_color == 'primary' ? '' : 'pw-black-button' ?>">
