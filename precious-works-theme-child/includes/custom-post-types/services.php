@@ -35,6 +35,7 @@
         'capability_type'     => 'page',
         'rewrite' => array(
             'slug' => 'practice-areas', // ← new slug here
+            'with_front' => false 
         ),
         'hierarchical'        => true,
         'query_var'           => true,
