@@ -8534,7 +8534,7 @@ small, .small {
 }
 .service-slider-cards-block-section .service-col {
   padding-top: 25px;
-  aspect-ratio: 8/9;
+  aspect-ratio: 8/10;
 }
 .service-slider-cards-block-section .service-col.first {
   background-color: lightgray;
