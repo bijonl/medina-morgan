@@ -4,6 +4,7 @@
 
 .single-post-tile {
     border: solid 1px $color-tertiary;
+    background-color: white; 
     .single-post-image-wrapper {
         width: 50%; 
         background-size: cover; 
@@ -25,6 +26,9 @@
         .post-title {
             font-size: 22px; 
             padding-bottom: 10px; 
+            // @include media-breakpoint-down(sm) {
+            //     font-size: 18px;
+            // }
         }
         .post-excerpt {
             font-size: 16px;  

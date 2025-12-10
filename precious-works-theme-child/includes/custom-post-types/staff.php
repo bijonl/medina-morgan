@@ -39,7 +39,9 @@
         'exclude_from_search' => true,
         'menu_icon'           => 'dashicons-businessperson',
         'show_in_rest'        => true,
-        'rewrite' => array('slug' => 'attorney'),
+        'rewrite' => array('slug' => 'attorney',
+        'with_front' => false
+        ),
         'supports'            => array( 'title', 'thumbnail'),
         'labels'              => $labels,
         'map_meta_cap'        => true,

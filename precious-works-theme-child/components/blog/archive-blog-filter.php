@@ -30,12 +30,34 @@ $default_blog_page = get_field('default_blog_page', 'options'); ?>
             <?php while($all_practices->have_posts()) { 
                 $all_practices->the_post(); 
                 $id = get_the_id(); 
+                $args = array(); 
                 $checkbox_id = 'practice-' . $id;
                 $checked = ''; 
                 if(in_array($id, $filtered_practice_areas)) {
                      $checked = 'checked';
                 }
-                include locate_template('components/variables/service-variables.php'); ?>
+                include locate_template('components/variables/service-variables.php'); 
+
+                $args = array(
+                  'post_type' => 'post', 
+                  'posts_per_page' => -1, 
+                   'meta_query' => array(
+                      array(
+                        'key' => 'practice_areas_crosslinks',
+                        'value'   => '"' . $id . '"', // match serialized array
+                        'compare' => 'LIKE',
+                  )),
+                ); 
+
+                $practice_posts = new WP_Query($args); 
+                
+                if(!$practice_posts->have_posts()) {
+                    continue; 
+                }; 
+
+          
+                
+                ?>
 
                 <li>
                     <input

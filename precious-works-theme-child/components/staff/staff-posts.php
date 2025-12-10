@@ -8,7 +8,7 @@
         </div>
         <div class="single-staff-posts-content-row row gx-5">
             <?php foreach($insights as $id) { ?>
-                <div class="single-post-tile-col col-6">
+                <div class="single-post-tile-col col-lg-6 pb-5 pb-lg-0">
                     <?php include(locate_template('/blocks/recent-posts/partials/single-post.php')); ?>
                 </div>
             <?php } ?>

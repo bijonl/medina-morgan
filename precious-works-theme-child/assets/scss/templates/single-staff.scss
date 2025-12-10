@@ -5,6 +5,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    @media (max-width: 768px) {
+        background-position: left;
+    }
     @media (min-width: 1200px) {
          height: 75vh; 
     }

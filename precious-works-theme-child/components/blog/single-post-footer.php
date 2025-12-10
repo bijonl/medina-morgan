@@ -1,4 +1,4 @@
-<div class="post-footer text-center">
+<div class="post-footer text-center pt-0">
     <h6 class="mb-0 h3">Share this Post</h6>
     <ul class="social-share-list list-unstyled ms-0">
         <li>
