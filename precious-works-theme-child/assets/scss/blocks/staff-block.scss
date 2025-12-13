@@ -1,4 +1,13 @@
 .staff-block-section {
+    &.background-primary {
+        .staff-member-card {
+            .staff-text-wrapper {
+                a:hover {
+                    color: inherit; 
+                }
+            }
+        }
+    }
     .staff-container {
         .staff-row {
             .staff-col {

@@ -8418,6 +8418,9 @@ small, .small {
   min-width: auto;
 }
 
+.staff-block-section.background-primary .staff-member-card .staff-text-wrapper a:hover {
+  color: inherit;
+}
 @media (max-width: 575.98px) {
   .staff-block-section .staff-container .staff-row .staff-col:last-child .staff-member-card {
     padding-bottom: 0;
